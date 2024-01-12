@@ -10,8 +10,14 @@ class Inspiration(models.Model):
     to='places.Place',
     related_name='inspirations'
   )
+  owner = models.ForeignKey(
+    to='users.User',
+    on_delete=models.CASCADE,
+    related_name='inspirations_owned',
+    null=True
+  )
 
   def __str__(self):
-    return f'{self.city} - {self.country} {self.description} {self.image}'
+    return f'{self.city} - {self.country}'
   
 
