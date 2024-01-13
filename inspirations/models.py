@@ -20,6 +20,10 @@ class Inspiration(models.Model):
     to='users.User',
     related_name='inspirations_liked'
   )
+  reviews = models.ManyToManyField(
+    to='reviews.Review',
+    related_name='reviews'
+  )
 
   def __str__(self):
     return f'{self.city} - {self.country}'

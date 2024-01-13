@@ -19,4 +19,7 @@ class PlaceListCreateView(ListCreateAPIView):
 
 class PlaceDetailedView(RetrieveUpdateDestroyAPIView):
   queryset = Place.objects.all()
+  serializer_class = PlaceSerializer
   permission_classes = [IsOwnerOrReadOnly]
+
+

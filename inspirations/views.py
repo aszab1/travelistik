@@ -30,10 +30,10 @@ class InspirationDetailView(RetrieveUpdateDestroyAPIView):
     permission_classes = [IsOwnerOrReadOnly]
 
     def get_serializer_class(self):
-      if self.request.method == 'GET':
-        return InspirationListSerializer
+      if self.request.method == 'PUT':
+        return InspirationSerializer
       else:
-        return InspirationSerializer 
+        return InspirationListSerializer 
 
 # Path: /inspirations/:pk/like/
 # Methods: PUT, PATCH (only use patch)      

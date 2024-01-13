@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     'inspirations',
     'places',
     'categories',
+    'reviews',
 ]
 
 REST_FRAMEWORK = {

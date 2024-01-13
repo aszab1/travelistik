@@ -14,7 +14,11 @@ class Place(models.Model):
     related_name='owned_places',
     null=True
   )
+  reviews = models.ManyToManyField(
+    to='reviews.Review',
+    related_name='places_reviews'
+  )
 
   def __str__(self):
-    return f'{self.name} {self.categories}'
+    return f'{self.name}'
   
