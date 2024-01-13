@@ -19,6 +19,9 @@ class InspirationListCreateView(OwnerListCreateView):
       if self.request.method == 'GET':
         return InspirationListSerializer
       return InspirationSerializer
+  
+  def perform_create(self, serializer):
+      serializer.save(owner=self.request.user)
 
 # Path: /inspirations/:pk/
 # Methods: GET, PUT, PATCH, DELETE
