@@ -18,11 +18,14 @@ class Inspiration(models.Model):
   )
   likes = models.ManyToManyField(
     to='users.User',
-    related_name='inspirations_liked'
+    related_name='inspirations_liked',
+    blank=True
+
   )
   reviews = models.ManyToManyField(
     to='reviews.Review',
-    related_name='reviews'
+    related_name='reviews',
+    blank=True
   )
 
   def __str__(self):

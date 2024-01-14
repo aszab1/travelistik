@@ -1,5 +1,10 @@
 from .common import PlaceSerializer
-from reviews.serializers.common import ReviewSerializer
+from users.serializers.common import UserSerializer
+from reviews.serializers.populated import ReviewListSerializer
+from users.serializers.common import UserSerializer
+
 
 class PlaceListSerializer(PlaceSerializer):
-  reviews = ReviewSerializer(many=True)
+  owner = UserSerializer()
+  reviews = ReviewListSerializer(many=True)
+  likes = UserSerializer(many=True)

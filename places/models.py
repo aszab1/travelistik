@@ -16,7 +16,13 @@ class Place(models.Model):
   )
   reviews = models.ManyToManyField(
     to='reviews.Review',
-    related_name='places_reviews'
+    related_name='places_reviews',
+    blank=True
+  )
+  likes = models.ManyToManyField(
+    to='users.User',
+    related_name='places_liked',
+    blank=True
   )
 
   def __str__(self):
