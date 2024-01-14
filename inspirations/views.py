@@ -12,7 +12,6 @@ from rest_framework.response import Response
 
 class InspirationListCreateView(OwnerListCreateView):
   queryset = Inspiration.objects.all()
-  serializer_class = InspirationSerializer
   permission_classes = [IsAuthenticatedOrReadOnly]
 
   def get_serializer_class(self):
@@ -20,8 +19,6 @@ class InspirationListCreateView(OwnerListCreateView):
         return InspirationListSerializer
       return InspirationSerializer
   
-  def perform_create(self, serializer):
-      serializer.save(owner=self.request.user)
 
 # Path: /inspirations/:pk/
 # Methods: GET, PUT, PATCH, DELETE

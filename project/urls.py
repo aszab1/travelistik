@@ -24,5 +24,5 @@ urlpatterns = [
     path('api/places/', include('places.urls')),
     path('api/categories/', include('categories.urls')),
     path('api/reviews/', include('reviews.urls')),
-    
+    path('api/boards/', include('boards.urls'))  
 ]
