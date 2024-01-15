@@ -1,0 +1,383 @@
+[
+{
+  "model": "inspirations.inspiration",
+  "pk": 11,
+  "fields": {
+    "city": "Cape Town",
+    "country": "South Africa",
+    "description": "Cape Town is a vibrant coastal city located at the southwestern tip of South Africa. Known for its stunning natural beauty, the city is nestled between the iconic Table Mountain and the Atlantic Ocean. \r\nThe city is celebrated for its diverse cultural influences, unique mix of outdoor activities, world-class cuisine, and a lively arts and music scene, making it a popular destination for tourists and locals alike.",
+    "image": "https://i.imgur.com/btpxEmL.jpg",
+    "owner": 3,
+    "places": [
+      15,
+      16,
+      17,
+      18,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26
+    ],
+    "likes": [],
+    "reviews": []
+  }
+},
+{
+  "model": "inspirations.inspiration",
+  "pk": 12,
+  "fields": {
+    "city": "New York",
+    "country": "USA",
+    "description": "New York City, often called \"The Big Apple,\" is a bustling metropolis and the most populous city in the United States. \r\nThe city's diverse neighbourhoods, from the artistic streets of SoHo to the historic alleys of Greenwich Village, offer a rich tapestry of American urban life. Renowned for its Broadway shows, museums like the Metropolitan Museum of Art, and diverse culinary scene.",
+    "image": "https://i.imgur.com/kNR3AP1.jpg",
+    "owner": 3,
+    "places": [
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38
+    ],
+    "likes": [],
+    "reviews": []
+  }
+},
+{
+  "model": "inspirations.inspiration",
+  "pk": 13,
+  "fields": {
+    "city": "Barcelona",
+    "country": "Spain",
+    "description": "Barcelona, the cosmopolitan capital of Spain’s Catalonia region, is renowned for its art, architecture, and vibrant cultural life.\r\nThe city's Gothic Quarter, with its medieval streets and squares, stands in contrast to the modernist architecture that defines much of the cityscape. Barcelona's beachside promenades, bustling La Rambla street, and the colourful Boqueria Market reflect its lively Mediterranean spirit.",
+    "image": "https://i.imgur.com/LvZzLyV.jpg",
+    "owner": 3,
+    "places": [
+      39,
+      40,
+      41,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49
+    ],
+    "likes": [],
+    "reviews": []
+  }
+},
+{
+  "model": "inspirations.inspiration",
+  "pk": 14,
+  "fields": {
+    "city": "La Fortuna",
+    "country": "Costa Rica",
+    "description": "a Fortuna is home to the famous Arenal Volcano, but it’s also the adventure capital of Costa Rica. It has a beautiful rainforest, impressive waterfalls, and abundant wildlife. From exceptional, not-to-be-missed properties to bucket-list experiences.\r\nArenal has a number of natural hot springs throughout the area, perfect for those looking to relax, refresh, and rejuvenate after a day of adventure",
+    "image": "https://i.imgur.com/yHBKoji.jpg",
+    "owner": 3,
+    "places": [
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56
+    ],
+    "likes": [],
+    "reviews": []
+  }
+},
+{
+  "model": "inspirations.inspiration",
+  "pk": 15,
+  "fields": {
+    "city": "Paris",
+    "country": "France",
+    "description": "Paris, often called \"The City of Light\", known for its romantic ambiance, rich history, and stunning architecture. The city's charming streets, lined with cafes, boutiques, and bakeries, epitomise French culture and art de vivre. Paris is also celebrated for its fashion, gourmet cuisine, and vibrant art scene, with numerous galleries and theatres. The Seine River, crisscrossed by picturesque bridges, adds to its beauty, making Paris a top destination for travellers worldwide.",
+    "image": "https://i.imgur.com/5xonadK.jpg",
+    "owner": 3,
+    "places": [
+      57,
+      58,
+      59,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68
+    ],
+    "likes": [],
+    "reviews": []
+  }
+},
+{
+  "model": "inspirations.inspiration",
+  "pk": 16,
+  "fields": {
+    "city": "Krabi",
+    "country": "Thailand",
+    "description": "Krabi, located on the west coast of southern Thailand, is a picturesque province renowned for its stunning limestone cliffs, clear waters, and pristine beaches. Serving as a gateway to the Andaman Sea, Krabi offers a tranquil escape with opportunities for beach relaxation, island hopping, and exploration of its natural wonders, including the famous Railay Beach and the emerald waters of the Phi Phi Islands.",
+    "image": "https://i.imgur.com/TfoiwGD.jpg",
+    "owner": 3,
+    "places": [
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76
+    ],
+    "likes": [],
+    "reviews": []
+  }
+},
+{
+  "model": "inspirations.inspiration",
+  "pk": 17,
+  "fields": {
+    "city": "Amsterdam",
+    "country": "Netherlands",
+    "description": "Amsterdam is a city known for its canals, quirky character, and free-spirited attitudes. \r\nWith its iconic tulip-lined streets, world-class museums, and a laid-back atmosphere, Amsterdam offers a unique blend of rich history and modern charm.\r\n Visitors can explore the Anne Frank House, cycle along the canals, and enjoy the diverse culinary and nightlife scenes.",
+    "image": "https://i.imgur.com/Y5dmnf8.jpg",
+    "owner": 3,
+    "places": [
+      77,
+      78,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88
+    ],
+    "likes": [],
+    "reviews": []
+  }
+},
+{
+  "model": "inspirations.inspiration",
+  "pk": 18,
+  "fields": {
+    "city": "Singapore",
+    "country": "Singapore",
+    "description": "Singapore is a dynamic city-state located at the crossroads of Asia, known for its modern skyline, multicultural ambiance, and vibrant street life.\r\nThe city  offers a unique blend of traditional Asian influences and cutting-edge innovation. Visitors can explore iconic landmarks, indulge in diverse culinary experiences, and enjoy the city's lush green spaces.",
+    "image": "https://i.imgur.com/aYVEQyd.jpg",
+    "owner": 3,
+    "places": [
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      106,
+      108,
+      109,
+      110,
+      111
+    ],
+    "likes": [],
+    "reviews": []
+  }
+},
+{
+  "model": "inspirations.inspiration",
+  "pk": 19,
+  "fields": {
+    "city": "Lisbon",
+    "country": "Portugal",
+    "description": "Lisbon is a city of captivating contrasts, where historic charm meets a lively, modern energy. Nestled on the banks of the Tagus River, Lisbon boasts colourful neighbourhoods, narrow cobblestone streets, and iconic viewpoints. With a rich maritime history, vibrant street life, and a thriving arts scene, Lisbon welcomes visitors with a warm and laid-back atmosphere.",
+    "image": "https://i.imgur.com/8L2GHVF.jpg",
+    "owner": 3,
+    "places": [
+      95,
+      96,
+      97,
+      98,
+      99,
+      100,
+      101,
+      102,
+      103,
+      104,
+      105
+    ],
+    "likes": [],
+    "reviews": []
+  }
+},
+{
+  "model": "inspirations.inspiration",
+  "pk": 20,
+  "fields": {
+    "city": "Dubai",
+    "country": "United Arab Emirates",
+    "description": "Dubai is an extravagant desert metropolis defined by ultra-modern skyscrapers, renowned dining, luxury shopping, and vibrant nightlife scenes blended with traditional Arabic culture.\r\nSituated on the southeast coast of the Arabian Peninsula, Dubai is a global hub for business, tourism, and innovation.",
+    "image": "https://i.imgur.com/3m0zPtA.jpg",
+    "owner": 3,
+    "places": [
+      112,
+      113,
+      114,
+      115,
+      116,
+      117,
+      118,
+      119,
+      120,
+      121,
+      122
+    ],
+    "likes": [],
+    "reviews": []
+  }
+},
+{
+  "model": "inspirations.inspiration",
+  "pk": 21,
+  "fields": {
+    "city": "Berlin",
+    "country": "Germany",
+    "description": "Berlin is a city with a rich history, vibrant arts scene, and a dynamic, multicultural atmosphere. Shaped by its tumultuous past, Berlin is known for its iconic landmarks, diverse neighbourhoods, and a thriving nightlife. \r\nVisitors can explore historic sites, modern architecture, and experience a unique blend of old-world charm and contemporary culture.",
+    "image": "https://i.imgur.com/gBezn9T.jpg",
+    "owner": 3,
+    "places": [
+      123,
+      124,
+      125,
+      126,
+      127,
+      128,
+      129,
+      130,
+      131,
+      132,
+      133
+    ],
+    "likes": [],
+    "reviews": []
+  }
+},
+{
+  "model": "inspirations.inspiration",
+  "pk": 22,
+  "fields": {
+    "city": "Prague",
+    "country": "Czech Republic",
+    "description": "Prague is a city known for its stunning architecture, rich history, and charming medieval atmosphere. Nestled along the Vltava River, Prague boasts a picturesque skyline with iconic landmarks.\r\nVisitors can explore cobblestone streets, visit historic sites, and enjoy the city's vibrant cultural scene.",
+    "image": "https://i.imgur.com/o8MD2ih.jpg",
+    "owner": 3,
+    "places": [
+      134,
+      135,
+      136,
+      137,
+      138,
+      139,
+      140,
+      141,
+      142,
+      143,
+      144
+    ],
+    "likes": [],
+    "reviews": []
+  }
+},
+{
+  "model": "inspirations.inspiration",
+  "pk": 23,
+  "fields": {
+    "city": "Bridgetown",
+    "country": "Barbados",
+    "description": "Bridgetown is the capital and largest city of Barbados. It is a major cruise ship port and popular tourist destination known for its beautiful beaches and colourful colonial architecture.",
+    "image": "https://i.imgur.com/zkm4BHk.jpg",
+    "owner": 3,
+    "places": [
+      145,
+      146,
+      147,
+      148,
+      149,
+      150,
+      151,
+      152,
+      153,
+      154,
+      155
+    ],
+    "likes": [],
+    "reviews": []
+  }
+},
+{
+  "model": "inspirations.inspiration",
+  "pk": 24,
+  "fields": {
+    "city": "Edinburgh",
+    "country": "Scotland",
+    "description": "Edinburgh is a city steeped in history, known for its medieval and Georgian architecture, cultural festivals, and the iconic Edinburgh Castle. Perched on rocky hills overlooking the North Sea, the city offers a captivating blend of historical landmarks, green spaces, and a vibrant arts scene.",
+    "image": "https://i.imgur.com/0E2dGLG.jpg",
+    "owner": 3,
+    "places": [
+      160,
+      161,
+      162,
+      163,
+      164,
+      165,
+      166,
+      156,
+      157,
+      158,
+      159
+    ],
+    "likes": [],
+    "reviews": []
+  }
+},
+{
+  "model": "inspirations.inspiration",
+  "pk": 25,
+  "fields": {
+    "city": "Monterosso al Mare",
+    "country": "Italy",
+    "description": "Monterosso al Mare is one of the five picturesque villages of Cinque Terre on the Italian Riviera coastline. Known for its beautiful beaches, scenic hiking trails, and historic medieval old town, it attracts tourists from around the world.",
+    "image": "https://i.imgur.com/35a8vhX.jpg",
+    "owner": 3,
+    "places": [
+      167,
+      168,
+      169,
+      170,
+      171,
+      172,
+      173,
+      174,
+      175
+    ],
+    "likes": [],
+    "reviews": []
+  }
+}
+]

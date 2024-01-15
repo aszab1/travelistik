@@ -1,0 +1,23 @@
+[
+{
+  "model": "categories.category",
+  "pk": 3,
+  "fields": {
+    "name": "restaurant"
+  }
+},
+{
+  "model": "categories.category",
+  "pk": 4,
+  "fields": {
+    "name": "bar"
+  }
+},
+{
+  "model": "categories.category",
+  "pk": 5,
+  "fields": {
+    "name": "landmark"
+  }
+}
+]

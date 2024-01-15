@@ -1,0 +1,2242 @@
+[
+{
+  "model": "places.place",
+  "pk": 15,
+  "fields": {
+    "name": "Shortmarket Club",
+    "description": "Upscale farm-to-table cuisine served in an elegant 19th-century heritage",
+    "owner": 3,
+    "categories": [
+      3
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 16,
+  "fields": {
+    "name": "The Pot Luck Club",
+    "description": "Trendy tapas-style eatery featuring plates elevated with Asian & African flavours.",
+    "owner": 3,
+    "categories": [
+      3
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 17,
+  "fields": {
+    "name": "Ginja Beers",
+    "description": "Popular rooftop bar with gorgeous city views and signature Ginja cocktails.",
+    "owner": 3,
+    "categories": [
+      4
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 18,
+  "fields": {
+    "name": "Orphanage Cocktail Emporium",
+    "description": "Luxe mixology bar crafting unique elixirs in a rich Victorian atmosphere.",
+    "owner": 3,
+    "categories": [
+      4
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 19,
+  "fields": {
+    "name": "The Waiting Room",
+    "description": "Unique underground vinyl bar hosting local DJs & creative cocktails in vintage decor.",
+    "owner": 3,
+    "categories": [
+      4
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 20,
+  "fields": {
+    "name": "The Waiting Room",
+    "description": "Unique underground vinyl bar hosting local DJs & creative cocktails in vintage decor.",
+    "owner": 3,
+    "categories": [
+      4
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 21,
+  "fields": {
+    "name": "Table Mountain",
+    "description": "Iconic flat-topped mountain with stunning views, epic hiking trails & biodiverse terrain.",
+    "owner": 3,
+    "categories": [
+      5
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 22,
+  "fields": {
+    "name": "Cape Point",
+    "description": "Dramatic sea cliffs & lighthouse marking the convergence between two oceans.",
+    "owner": 3,
+    "categories": [
+      5
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 23,
+  "fields": {
+    "name": "Robben Island",
+    "description": "Historic former prison island turned museum where Nelson Mandela was incarcerated.",
+    "owner": 3,
+    "categories": [
+      5
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 24,
+  "fields": {
+    "name": "Cape of Good Hope",
+    "description": "Beautiful rugged cape & nature reserve said to be the mythical meeting point of two oceans.",
+    "owner": 3,
+    "categories": [
+      5
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 25,
+  "fields": {
+    "name": "Kirstenbosch National Botanical Garden",
+    "description": "Renowned lush garden estate with flora / biodiversity from across southern Africa.",
+    "owner": 3,
+    "categories": [
+      5
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 26,
+  "fields": {
+    "name": "The Victoria and Alfred Waterfront",
+    "description": "Bustling coastal harbour with top shopping, dining and entertainment attractions.",
+    "owner": 3,
+    "categories": [
+      5
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 27,
+  "fields": {
+    "name": "Per Se",
+    "description": "Thomas Keller's esteemed contemporary American venue in Columbus Circle.",
+    "owner": 3,
+    "categories": [
+      3
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 28,
+  "fields": {
+    "name": "Eleven Madison Park",
+    "description": "Artful, seasonal tasting menus from Daniel Humm in chic quarters",
+    "owner": 3,
+    "categories": [
+      3
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 29,
+  "fields": {
+    "name": "The River Cafe",
+    "description": "Charming waterfront spot for refined New American cuisine and iconic views.",
+    "owner": 3,
+    "categories": [
+      3
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 30,
+  "fields": {
+    "name": "Dante",
+    "description": "Cozy cocktail haunt mixing inventive drinks in a fireplace-warmed space.",
+    "owner": 3,
+    "categories": [
+      4
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 31,
+  "fields": {
+    "name": "Employess Only",
+    "description": "Iconic Prohibition-era style bar with renowned mixologists and craft cocktails.",
+    "owner": 3,
+    "categories": [
+      4
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 32,
+  "fields": {
+    "name": "Death & Co",
+    "description": "With a hip yet unpretentious vibe, Death & Co attracts diverse crowds while retaining its orientation around exquisite, sophisticated cocktails.",
+    "owner": 3,
+    "categories": [
+      4
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 33,
+  "fields": {
+    "name": "Statue of Liberty",
+    "description": "The Statue of Liberty is a globally iconic symbol of freedom and democracy located off the southern tip of Manhattan Island, New York City.",
+    "owner": 3,
+    "categories": [
+      5
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 34,
+  "fields": {
+    "name": "Empire State Building",
+    "description": "The Empire State Building is a 102-story Art Deco skyscraper in Midtown Manhattan, New York City, with its distinct tapered shape and observatory on the 86th and 102nd floors that offers panoramic 360 degree views of the entire city.",
+    "owner": 3,
+    "categories": [
+      5
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 35,
+  "fields": {
+    "name": "Central Park",
+    "description": "It's a big park",
+    "owner": 3,
+    "categories": [
+      5
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 36,
+  "fields": {
+    "name": "Rockefeller Center",
+    "description": "Rockefeller Center is a large commercial complex in Midtown Manhattan, acres with 19 high-rise buildings containing offices, retail stores, restaurants, entertainment venues, and an iconic outdoor ice skating rink",
+    "owner": 3,
+    "categories": [
+      5
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 37,
+  "fields": {
+    "name": "Brooklyn Bridge",
+    "description": "The Brooklyn Bridge is a historic suspension bridge spanning the East River to connect the city boroughs of Manhattan and Brooklyn, featuring Gothic-arched towers and miles of cabling above wooden walkways and vehicular passages.",
+    "owner": 3,
+    "categories": [
+      5
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 38,
+  "fields": {
+    "name": "Times Square",
+    "description": "Time Square known for its bright neon billboards, towering skyscrapers, Broadway theatres, pedestrian plazas, and New Year's Eve ball drop celebrations centered around the busiest hub of the city.",
+    "owner": 3,
+    "categories": [
+      5
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 39,
+  "fields": {
+    "name": "Disfrutar",
+    "description": "Avant garden tasting menus in a relaxed atmosphere",
+    "owner": 3,
+    "categories": [
+      3
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 40,
+  "fields": {
+    "name": "Els Pescadors",
+    "description": "Grilled seafood, flavourful rice dishes, and superb wines by the scenic harbour.",
+    "owner": 3,
+    "categories": [
+      3
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 41,
+  "fields": {
+    "name": "Cinc Sentits",
+    "description": "Chef Jordi Artal's tasting menu skilfully using seasonal market ingredients in an elegant space.",
+    "owner": 3,
+    "categories": [
+      3
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 42,
+  "fields": {
+    "name": "Paradiso",
+    "description": "Speakeasy-style watering hole transporting guests to fantasy past with creative cocktails.",
+    "owner": 3,
+    "categories": [
+      4
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 43,
+  "fields": {
+    "name": "Paradiso",
+    "description": "Speakeasy-style watering hole transporting guests to fantasy past with creative cocktails.",
+    "owner": 3,
+    "categories": [
+      4
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 44,
+  "fields": {
+    "name": "El Born Bar",
+    "description": "Historic hangout in stone cellar with handcrafted cocktails & Spanish wines .",
+    "owner": 3,
+    "categories": [
+      4
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 45,
+  "fields": {
+    "name": "La Sagrada Familia",
+    "description": "Gaudi's iconic unfinished Roman Catholic basilica church.",
+    "owner": 3,
+    "categories": [
+      5
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 46,
+  "fields": {
+    "name": "Park Guell",
+    "description": "Colourful mosaics and surreal architecture in modernist hillside park.",
+    "owner": 3,
+    "categories": [
+      5
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 47,
+  "fields": {
+    "name": "Casa Batllo",
+    "description": "Gaudi’s fantastical residence with waving stone facade overlooking Passeig de Gracia.",
+    "owner": 3,
+    "categories": [
+      5
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 48,
+  "fields": {
+    "name": "Casa Mila “La Pedrera\"",
+    "description": "Otherworldly undulating stone building by Antoni Gaudi with chimney forest.",
+    "owner": 3,
+    "categories": [
+      5
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 49,
+  "fields": {
+    "name": "Barri Gòtic",
+    "description": "Gothic Quarter - A historic neighbourhood with narrow streets, medieval buildings, and charming squares.",
+    "owner": 3,
+    "categories": [
+      5
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 50,
+  "fields": {
+    "name": "Las Brasitas",
+    "description": "Creative fusion of Costa Rican and Mexican flavours and contemporary presentation.",
+    "owner": 3,
+    "categories": [
+      3
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 51,
+  "fields": {
+    "name": "Don Rufino",
+    "description": "Elegant venue bringing farm-to-table local ingredients to life with upscale techniques.",
+    "owner": 3,
+    "categories": [
+      3
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 52,
+  "fields": {
+    "name": "La Parada",
+    "description": "Inviting spot focused on typical Costa Rican cuisine in a colourful setting at a budget price.",
+    "owner": 3,
+    "categories": [
+      3
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 53,
+  "fields": {
+    "name": "Down to Earth",
+    "description": "Quirky coffeehouse by day and cocktail lounge by night with regular open mic entertainment.",
+    "owner": 3,
+    "categories": [
+      4
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 54,
+  "fields": {
+    "name": "Arenal Volcano",
+    "description": "Iconic active volcano providing dramatic views and hiking areas through old lava flows.",
+    "owner": 3,
+    "categories": [
+      5
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 55,
+  "fields": {
+    "name": "La Fortuna Waterfall",
+    "description": "Impressive waterfall plunging 200ft into a lush jungle that invites swimming and photo opportunities.",
+    "owner": 3,
+    "categories": [
+      5
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 56,
+  "fields": {
+    "name": "Tenorio Volcano National Park",
+    "description": "Diverse terrain of lava fields, hot springs, rapids and wildlife found inside this park area.",
+    "owner": 3,
+    "categories": [
+      5
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 57,
+  "fields": {
+    "name": "Guy Savoy",
+    "description": "3 Michelin-star restaurant overlooking the Seine known for its refined French dishes",
+    "owner": 3,
+    "categories": [
+      3
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 58,
+  "fields": {
+    "name": "Septime",
+    "description": "A trendy restaurant with a focus on seasonal and innovative French cuisine.",
+    "owner": 3,
+    "categories": [
+      4
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 59,
+  "fields": {
+    "name": "Le Jules Verne",
+    "description": "Located in the Eiffel Tower, offering gourmet French cuisine with breathtaking views.",
+    "owner": 3,
+    "categories": [
+      3
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 60,
+  "fields": {
+    "name": "Le Comptoir General",
+    "description": "A quirky and eclectic bar known for its artistic atmosphere and unique cocktails.",
+    "owner": 3,
+    "categories": [
+      4
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 61,
+  "fields": {
+    "name": "Le Comptoir General",
+    "description": "A quirky and eclectic bar known for its artistic atmosphere and unique cocktails.",
+    "owner": 3,
+    "categories": [
+      4
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 62,
+  "fields": {
+    "name": "Little Red Door:",
+    "description": "A stylish cocktail bar with a changing menu and skilled mixologists.",
+    "owner": 3,
+    "categories": [
+      4
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 63,
+  "fields": {
+    "name": "Candelaria",
+    "description": "A hidden gem combining a taqueria and a speakeasy-style cocktail bar.",
+    "owner": 3,
+    "categories": [
+      4
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 64,
+  "fields": {
+    "name": "Eiffel Tower",
+    "description": "the Eiffel Tower built in 1889 as the entrance arch to the World's Fair in Paris, France, that has become a global cultural emblem of French architecture and one of the most recognisable structures in the world.",
+    "owner": 3,
+    "categories": [
+      5
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 65,
+  "fields": {
+    "name": "Arc de Triomphe",
+    "description": "The Arc de Triomphe is a towering 19th century triumphal arch honouring those who fought in the French Revolutionary and Napoleonic Wars, situated in the centre of the Place Charles de Gaulle rotary at the western end of the Champs-Elysees.",
+    "owner": 3,
+    "categories": [
+      5
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 66,
+  "fields": {
+    "name": "Notre Dame Cathedral",
+    "description": "Notre Dame Cathedral is a medieval Gothic Catholic church",
+    "owner": 3,
+    "categories": [
+      5
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 67,
+  "fields": {
+    "name": "The Louvre",
+    "description": "The Louvre is the world's largest art museum and an icon of Paris housing over 35,000 priceless works from antiquity to the 19th century, with the collection originating in King Louis XIV's royal personal trove and the palace holding relics like the Mona Lisa and Venus de Milo situated near the glass pyramid.",
+    "owner": 3,
+    "categories": [
+      5
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 68,
+  "fields": {
+    "name": "Sacre-Cœur Basilica",
+    "description": "Sacre-Cœur, is a Roman Catholic church and minor basilica in Paris dedicated to the Sacred Heart of Jesus.",
+    "owner": 3,
+    "categories": [
+      5
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 69,
+  "fields": {
+    "name": "Krua Thara",
+    "description": "A beachfront restaurant offering authentic Thai seafood dishes with a stunning view.",
+    "owner": 3,
+    "categories": [
+      3
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 70,
+  "fields": {
+    "name": "The Grotto",
+    "description": "Situated in Railay, known for its romantic setting within a limestone cave and seafood specialties.",
+    "owner": 3,
+    "categories": [
+      3
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 71,
+  "fields": {
+    "name": "Ao Nang Center Point",
+    "description": "A lively spot with various bars, including live music and a vibrant atmosphere.",
+    "owner": 3,
+    "categories": [
+      4
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 72,
+  "fields": {
+    "name": "Sunset Bar Railay",
+    "description": "Positioned for breathtaking sunset views, offering cocktails and a relaxed ambiance.",
+    "owner": 3,
+    "categories": [
+      4
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 73,
+  "fields": {
+    "name": "Railay Beach",
+    "description": "Famous for its stunning limestone cliffs, clear waters, and rock climbing opportunities.",
+    "owner": 3,
+    "categories": [
+      5
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 74,
+  "fields": {
+    "name": "Tiger Cave Temple (Wat Tham Sua)",
+    "description": "A Buddhist temple with a challenging climb offering panoramic views.",
+    "owner": 3,
+    "categories": [
+      5
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 75,
+  "fields": {
+    "name": "Emerald Pool (Sa Morakot)",
+    "description": "A natural hot spring and freshwater pool surrounded by lush jungle.",
+    "owner": 3,
+    "categories": [
+      5
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 76,
+  "fields": {
+    "name": "Thung Teao Forest Natural Park",
+    "description": "Lush mangrove forests interwoven by clear streams and home to crabs, birds and monkeys.",
+    "owner": 3,
+    "categories": [
+      5
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 77,
+  "fields": {
+    "name": "De Kas",
+    "description": "Housed in a greenhouse, it offers farm-to-table dining with fresh, seasonal ingredients.",
+    "owner": 3,
+    "categories": [
+      3
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 78,
+  "fields": {
+    "name": "Pllek",
+    "description": "A unique restaurant built from shipping containers, offering sustainable and organic dishes",
+    "owner": 3,
+    "categories": [
+      3
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 79,
+  "fields": {
+    "name": "Spectrum",
+    "description": "Michelin star contemporary fine dining from chef Julius Jaspers blending global techniques.",
+    "owner": 3,
+    "categories": [
+      3
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 80,
+  "fields": {
+    "name": "Spectrum",
+    "description": "Michelin star contemporary fine dining from chef Julius Jaspers blending global techniques.",
+    "owner": 3,
+    "categories": [
+      3
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 81,
+  "fields": {
+    "name": "SkyLounge Amsterdam",
+    "description": "Rooftop bar with panoramic views of the city and a diverse cocktail menu.",
+    "owner": 3,
+    "categories": [
+      4
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 82,
+  "fields": {
+    "name": "Door 74",
+    "description": "A speakeasy-style bar with a sophisticated atmosphere and expertly crafted cocktails.",
+    "owner": 3,
+    "categories": [
+      4
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 83,
+  "fields": {
+    "name": "Hannekes Boom",
+    "description": "A waterfront bar with a relaxed atmosphere, live music, and a variety of drinks.",
+    "owner": 3,
+    "categories": [
+      4
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 84,
+  "fields": {
+    "name": "Anne Frank House",
+    "description": "The hiding place where Anne Frank wrote her famous diary during World War II.",
+    "owner": 3,
+    "categories": [
+      5
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 85,
+  "fields": {
+    "name": "Rijksmuseum",
+    "description": "A national museum showcasing Dutch art and history, featuring works by Rembrandt and Vermeer.",
+    "owner": 3,
+    "categories": [
+      5
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 86,
+  "fields": {
+    "name": "Dam Square",
+    "description": "The central square featuring the Royal Palace and the National Monument.",
+    "owner": 3,
+    "categories": [
+      5
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 87,
+  "fields": {
+    "name": "Canal Ring (Grachtengordel)",
+    "description": "A UNESCO World Heritage site with picturesque canals, historic houses, and charming bridges.",
+    "owner": 3,
+    "categories": [
+      5
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 88,
+  "fields": {
+    "name": "Van Gogh Museum",
+    "description": "Home to an extensive collection of Vincent van Gogh's masterpieces.",
+    "owner": 3,
+    "categories": [
+      5
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 89,
+  "fields": {
+    "name": "Labyrinth",
+    "description": "A Michelin-starred restaurant offering innovative Singaporean cuisine with a contemporary twist.",
+    "owner": 3,
+    "categories": [
+      3
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 90,
+  "fields": {
+    "name": "Burnt Ends",
+    "description": "A popular spot for barbecue and grilled dishes with a casual yet sophisticated atmosphere.",
+    "owner": 3,
+    "categories": [
+      3
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 91,
+  "fields": {
+    "name": "Meta",
+    "description": "Kevin Cherkas's progressive Singaporean tasting menus melding diverse flavours and techniques to earn 2 Michelin stars.",
+    "owner": 3,
+    "categories": [
+      3
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 92,
+  "fields": {
+    "name": "Long Bar Raffles",
+    "description": "The historic Long Bar is where the Singapore Sling, widely regarded as a national drink, was first mixed in 1915.",
+    "owner": 3,
+    "categories": [
+      4
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 93,
+  "fields": {
+    "name": "Ce La Vi",
+    "description": "A rooftop bar with stunning views of the city skyline, offering cocktails and a lively atmosphere.",
+    "owner": 3,
+    "categories": [
+      4
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 94,
+  "fields": {
+    "name": "The Old Man Singapore",
+    "description": "Ernest Hemingway themed island bar offering drinks prepared with Asian herbs and spices.",
+    "owner": 3,
+    "categories": [
+      4
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 95,
+  "fields": {
+    "name": "Alma",
+    "description": "Renowned for its contemporary Portuguese dishes, Alma has earned a Michelin star for its culinary excellence.",
+    "owner": 3,
+    "categories": [
+      3
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 96,
+  "fields": {
+    "name": "Loco",
+    "description": "A Michelin-starred restaurant known for its inventive and avant-garde approach to Portuguese flavours.",
+    "owner": 3,
+    "categories": [
+      3
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 97,
+  "fields": {
+    "name": "Taberna do Mercado",
+    "description": "A popular spot for traditional Portuguese tapas and a lively, informal atmosphere.",
+    "owner": 3,
+    "categories": [
+      3
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 98,
+  "fields": {
+    "name": "Topo Chiado",
+    "description": "Laid-back open air bar occupying a prime spot to take in views of the Santa Justa Lift and the Tagus River.",
+    "owner": 3,
+    "categories": [
+      4
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 99,
+  "fields": {
+    "name": "Pensao Amor",
+    "description": "Housed in a former brothel, this quirky bar features eclectic decor and a vibrant atmosphere.",
+    "owner": 3,
+    "categories": [
+      4
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 100,
+  "fields": {
+    "name": "Park Bar",
+    "description": "A rooftop bar set in a parking garage, offering panoramic views of the city and the river.",
+    "owner": 3,
+    "categories": [
+      4
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 101,
+  "fields": {
+    "name": "Belem Tower (Torre de Belem)",
+    "description": "A UNESCO World Heritage site, this fortress stands at the entrance of the city's harbour.",
+    "owner": 3,
+    "categories": [
+      5
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 102,
+  "fields": {
+    "name": "Sao Jorge Castle",
+    "description": "A historic castle atop a hill, offering panoramic views of Lisbon.",
+    "owner": 3,
+    "categories": [
+      5
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 103,
+  "fields": {
+    "name": "Rossio Square",
+    "description": "The main square in the heart of the city, surrounded by historic buildings.",
+    "owner": 3,
+    "categories": [
+      5
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 104,
+  "fields": {
+    "name": "Jeronimos Monastery",
+    "description": "A masterpiece of Manueline architecture and another UNESCO site.",
+    "owner": 3,
+    "categories": [
+      5
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 105,
+  "fields": {
+    "name": "Tram 28",
+    "description": "An iconic tram route that takes you through many of Lisbon's neighbourhoods, providing a unique perspective on the city.",
+    "owner": 3,
+    "categories": [
+      5
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 106,
+  "fields": {
+    "name": "Marina Bay Sands",
+    "description": "conic integrated resort with a rooftop pool, observation deck, and a distinctive skyline presence.",
+    "owner": 3,
+    "categories": [
+      5
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 108,
+  "fields": {
+    "name": "Gardens by the Bay",
+    "description": "Futuristic botanical gardens featuring the iconic Supertree Grove and the Cloud Forest.",
+    "owner": 3,
+    "categories": [
+      5
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 109,
+  "fields": {
+    "name": "Sentosa Island",
+    "description": "A resort island with attractions such as Universal Studios Singapore and S.E.A. Aquarium.",
+    "owner": 3,
+    "categories": [
+      5
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 110,
+  "fields": {
+    "name": "Merlion Park",
+    "description": "Home to the iconic Merlion statue, offering views of the city skyline and Marina Bay Sands.",
+    "owner": 3,
+    "categories": [
+      5
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 111,
+  "fields": {
+    "name": "Singapore Botanic Gardens",
+    "description": "A UNESCO World Heritage site with lush greenery, themed gardens, and the National Orchid Garden.",
+    "owner": 3,
+    "categories": [
+      5
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 112,
+  "fields": {
+    "name": "Ossiano",
+    "description": "Underwater fine dining within the Atlantis hotel offering views of marine life through floor-to-ceiling windows.",
+    "owner": 3,
+    "categories": [
+      3
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 113,
+  "fields": {
+    "name": "Pierchic",
+    "description": "A restaurant set on a pier over the Arabian Gulf, offering seafood with breathtaking views.",
+    "owner": 3,
+    "categories": [
+      3
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 114,
+  "fields": {
+    "name": "Torno Subito",
+    "description": "Massimo Bottura’s first restaurant outside Italy located at the W Dubai Palm Jumeirah.",
+    "owner": 3,
+    "categories": [
+      3
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 115,
+  "fields": {
+    "name": "Atelier M",
+    "description": "Panoramic views of Burj Khalifa from the 122nd floor of the iconic skyscraper.",
+    "owner": 3,
+    "categories": [
+      4
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 116,
+  "fields": {
+    "name": "At.mosphere",
+    "description": "Situated in the Burj Khalifa, At.mosphere is one of the world's highest restaurants and bars.",
+    "owner": 3,
+    "categories": [
+      4
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 117,
+  "fields": {
+    "name": "Barasti Beach",
+    "description": "A beachfront bar offering a laid-back setting, live music, and stunning views of the Dubai Marina.",
+    "owner": 3,
+    "categories": [
+      4
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 118,
+  "fields": {
+    "name": "Burj Khalifa",
+    "description": "World’s tallest building soaring 2,717 ft into the clouds from the desert metropolis below.",
+    "owner": 3,
+    "categories": [
+      5
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 119,
+  "fields": {
+    "name": "Burj Al Arab",
+    "description": "An icon of luxury hospitality designed to mimic a billowing sail rising from the sea.",
+    "owner": 3,
+    "categories": [
+      5
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 120,
+  "fields": {
+    "name": "Palm Jumeirah",
+    "description": "Man made archipelago of islands shaped like a palm tree home to luxury resorts and villas.",
+    "owner": 3,
+    "categories": [
+      5
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 121,
+  "fields": {
+    "name": "Dubai Miracle Garden",
+    "description": "Whimsical floral exhibition boasting millions of blooms and countless themed garden landscapes.",
+    "owner": 3,
+    "categories": [
+      5
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 122,
+  "fields": {
+    "name": "Dubai Mall",
+    "description": "Enormous shopping and entertainment hub with attractions like Dubai Aquarium and VR Park.",
+    "owner": 3,
+    "categories": [
+      5
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 123,
+  "fields": {
+    "name": "Nobelhart & Schmutzig",
+    "description": "Focused on locally sourced, seasonal ingredients, this Michelin-starred restaurant is celebrated for its tasting menu.",
+    "owner": 3,
+    "categories": [
+      3
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 124,
+  "fields": {
+    "name": "Facil",
+    "description": "Set in a glass pavilion, Facil offers innovative, Michelin-starred German cuisine.",
+    "owner": 3,
+    "categories": [
+      3
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 125,
+  "fields": {
+    "name": "CODA Dessert Dining",
+    "description": "Unique dessert-only tasting menus from star pastry chef René Frank featuring savoury notes and unconventional plating.",
+    "owner": 3,
+    "categories": [
+      3
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 126,
+  "fields": {
+    "name": "Klunkerkranich",
+    "description": "A rooftop bar located on top of a parking garage, known for its laid-back atmosphere and live music.",
+    "owner": 3,
+    "categories": [
+      4
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 127,
+  "fields": {
+    "name": "Bar Tausend",
+    "description": "Tucked away in Mitte, this trendy bar is known for its unique underground setting and craft cocktails.",
+    "owner": 3,
+    "categories": [
+      4
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 128,
+  "fields": {
+    "name": "Green Door Berlin",
+    "description": "Behind the hidden green entrance lies an elegant speakeasy style craft cocktail bar.",
+    "owner": 3,
+    "categories": [
+      4
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 129,
+  "fields": {
+    "name": "Brandenburg Gate",
+    "description": "A symbol of German unity, this neoclassical gate is one of Berlin's most iconic landmarks.",
+    "owner": 3,
+    "categories": [
+      5
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 130,
+  "fields": {
+    "name": "Reichstag Building",
+    "description": "The seat of the German parliament, known for its glass dome offering panoramic views of the city.",
+    "owner": 3,
+    "categories": [
+      5
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 131,
+  "fields": {
+    "name": "Berlin Wall",
+    "description": "Historic remnants and East Side Gallery showcase the city's division and reunification.",
+    "owner": 3,
+    "categories": [
+      5
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 132,
+  "fields": {
+    "name": "Museum Island",
+    "description": "A UNESCO World Heritage site with several world-class museums along the Spree River.",
+    "owner": 3,
+    "categories": [
+      5
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 133,
+  "fields": {
+    "name": "Checkpoint Charlie",
+    "description": "A former border crossing point between East and West Berlin during the Cold War.",
+    "owner": 3,
+    "categories": [
+      5
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 134,
+  "fields": {
+    "name": "La Degustation Bohême Bourgeoise",
+    "description": "A Michelin-starred restaurant offering a unique culinary experience with a focus on Czech cuisine.",
+    "owner": 3,
+    "categories": [
+      3
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 135,
+  "fields": {
+    "name": "Eska",
+    "description": "Combining a bakery, restaurant, and café, Eska is celebrated for its modern Czech cuisine and artisanal bread.",
+    "owner": 3,
+    "categories": [
+      3
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 136,
+  "fields": {
+    "name": "U Modre Kachnicky",
+    "description": "A traditional Czech restaurant known for its duck dishes and classic ambiance.",
+    "owner": 3,
+    "categories": [
+      3
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 137,
+  "fields": {
+    "name": "Hemingway Bar",
+    "description": "A stylish cocktail bar with a vintage vibe, Hemingway Bar is famous for its expertly crafted drinks.",
+    "owner": 3,
+    "categories": [
+      4
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 138,
+  "fields": {
+    "name": "Anonymous Bar",
+    "description": "Known for its unique, secret-agent-themed decor and creative cocktails.",
+    "owner": 3,
+    "categories": [
+      4
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 139,
+  "fields": {
+    "name": "Bugsy’s Bar",
+    "description": "Iconic art deco hotel bar since the 1930's featuring live music, drinks and Old Hollywood glamour.",
+    "owner": 3,
+    "categories": [
+      4
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 140,
+  "fields": {
+    "name": "Prague Castle",
+    "description": "A historic castle complex with stunning architecture, including St. Vitus Cathedral.",
+    "owner": 3,
+    "categories": [
+      5
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 141,
+  "fields": {
+    "name": "Charles Bridge",
+    "description": "A iconic medieval bridge adorned with statues, connecting Old Town and Prague Castle.",
+    "owner": 3,
+    "categories": [
+      5
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 142,
+  "fields": {
+    "name": "Old Town Square",
+    "description": "The central square surrounded by colourful buildings, featuring the Astronomical Clock.",
+    "owner": 3,
+    "categories": [
+      5
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 143,
+  "fields": {
+    "name": "Astronomical Clock",
+    "description": "A medieval clock on the Old Town Hall, known for its hourly animated figurines.",
+    "owner": 3,
+    "categories": [
+      5
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 144,
+  "fields": {
+    "name": "St. Nicholas Church",
+    "description": "Baroque church in the Lesser Town with impressive interior decorations.",
+    "owner": 3,
+    "categories": [
+      5
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 145,
+  "fields": {
+    "name": "Champers",
+    "description": "Elegant fine dining restaurant specializing in Caribbean cuisine.",
+    "owner": 3,
+    "categories": [
+      3
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 146,
+  "fields": {
+    "name": "Brown Sugar",
+    "description": "Popular authentic Caribbean restaurant known for their fish dishes.",
+    "owner": 3,
+    "categories": [
+      3
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 147,
+  "fields": {
+    "name": "Cafe Luna",
+    "description": "Trendy rooftop restaurant with panoramic views and Mediterranean fusion fare.",
+    "owner": 3,
+    "categories": [
+      3
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 148,
+  "fields": {
+    "name": "Beach Bar at Sandy Lane Hotel",
+    "description": "Upscale resort bar for cocktails and scenic ocean views.",
+    "owner": 3,
+    "categories": [
+      4
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 149,
+  "fields": {
+    "name": "Jam Jar",
+    "description": "Chic and lively spot to enjoy craft cocktails and small plates in a 2-story villa.",
+    "owner": 3,
+    "categories": [
+      4
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 150,
+  "fields": {
+    "name": "Waterfront Cafe",
+    "description": "Laidback bar perfect for sunset views and trying local rum cocktails.",
+    "owner": 3,
+    "categories": [
+      4
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 151,
+  "fields": {
+    "name": "Careenage",
+    "description": "Picturesque marina area filled with yachts and colonial buildings.",
+    "owner": 3,
+    "categories": [
+      5
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 152,
+  "fields": {
+    "name": "Bridgetown Synagogue",
+    "description": "One of the oldest synagogues in the western hemisphere, founded in 1654.",
+    "owner": 3,
+    "categories": [
+      5
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 153,
+  "fields": {
+    "name": "Harrison's Cave",
+    "description": "A limestone cave system with underground lakes and flowing streams, popular for tours is a half an hour drive from Bridgetown.",
+    "owner": 3,
+    "categories": [
+      5
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 154,
+  "fields": {
+    "name": "Bathsheba",
+    "description": "An iconic surfing area on the rugged east coast famous for its dramatic boulder scenery and epic waves.",
+    "owner": 3,
+    "categories": [
+      5
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 155,
+  "fields": {
+    "name": "Morgan Lewis Sugar Mill",
+    "description": "One of the last remaining operational windmill sugar factories, reflecting Barbados' sugar producing history.",
+    "owner": 3,
+    "categories": [
+      5
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 156,
+  "fields": {
+    "name": "The Kitchin",
+    "description": "A Michelin-starred restaurant with a focus on modern Scottish cuisine and locally sourced ingredients.",
+    "owner": 3,
+    "categories": [
+      3
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 157,
+  "fields": {
+    "name": "Scran & Scallie",
+    "description": "A gastropub with a Michelin Bib Gourmand, offering hearty Scottish fare in a relaxed setting.",
+    "owner": 3,
+    "categories": [
+      3
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 158,
+  "fields": {
+    "name": "Timberyard",
+    "description": "Housed in a former warehouse, Timberyard offers a rustic yet refined dining experience with a commitment to sustainability",
+    "owner": 3,
+    "categories": [
+      3
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 159,
+  "fields": {
+    "name": "Bramble",
+    "description": "A hidden gem with a speakeasy vibe, Bramble is known for its inventive cocktails and intimate setting.",
+    "owner": 3,
+    "categories": [
+      4
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 160,
+  "fields": {
+    "name": "Panda & Sons",
+    "description": "A quirky and stylish bar designed as a barber shop, offering creative cocktails and a unique atmosphere.",
+    "owner": 3,
+    "categories": [
+      4
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 161,
+  "fields": {
+    "name": "The Devil's Advocate",
+    "description": "Set in an old Victorian pump house, this bar offers a diverse selection of whiskies and cocktails.",
+    "owner": 3,
+    "categories": [
+      4
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 162,
+  "fields": {
+    "name": "Edinburgh Castle",
+    "description": "A historic fortress perched on Castle Rock, offering panoramic views of the city.",
+    "owner": 3,
+    "categories": [
+      5
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 163,
+  "fields": {
+    "name": "Palace of Holyroodhouse",
+    "description": "The official residence of the British monarch in Scotland, located at the end of the Royal Mile.",
+    "owner": 3,
+    "categories": [
+      5
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 164,
+  "fields": {
+    "name": "The Royal Mile",
+    "description": "historic street connecting Edinburgh Castle to the Palace of Holyroodhouse, lined with shops, restaurants, and historic sites.",
+    "owner": 3,
+    "categories": [
+      5
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 165,
+  "fields": {
+    "name": "Arthur's Seat",
+    "description": "An extinct volcano and the main peak in the group of hills in Holyrood Park, providing a stunning view of the city.",
+    "owner": 3,
+    "categories": [
+      5
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 166,
+  "fields": {
+    "name": "National Museum of Scotland",
+    "description": "A diverse museum showcasing Scotland's history, culture, and natural heritage.",
+    "owner": 3,
+    "categories": [
+      5
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 167,
+  "fields": {
+    "name": "Il Casello",
+    "description": "Highly rated local eatery specializing in freshly caught seafood.",
+    "owner": 3,
+    "categories": [
+      3
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 168,
+  "fields": {
+    "name": "La Lampara",
+    "description": "Waterfront restaurant in the new town serving delicious Mediterranean cuisine.",
+    "owner": 3,
+    "categories": [
+      3
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 169,
+  "fields": {
+    "name": "Restaurant Belvedere",
+    "description": "Cliffside restaurant boasting unparalleled vistas over the sea and Cinque Terre coastline.",
+    "owner": 3,
+    "categories": [
+      3
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 170,
+  "fields": {
+    "name": "Bar Gianni",
+    "description": "Laidback bar set on the beachfront, perfect for a drink while watching the sunset over the sea.",
+    "owner": 3,
+    "categories": [
+      4
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 171,
+  "fields": {
+    "name": "Miky",
+    "description": "Unique seaside bar crafted out of an old blue fishing boat permanently moored in the new port.",
+    "owner": 3,
+    "categories": [
+      4
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 172,
+  "fields": {
+    "name": "Il Golosone",
+    "description": "Tiny hole-in-the-wall pub serving over 100 kinds of artisanal beers from Italy and beyond.",
+    "owner": 3,
+    "categories": [
+      4
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 173,
+  "fields": {
+    "name": "Sentiero Azzurro",
+    "description": "Part of the famous Sentiero Azzurro coastal trail, meandering through vineyards and lemon groves.",
+    "owner": 3,
+    "categories": [
+      5
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 174,
+  "fields": {
+    "name": "Old Town",
+    "description": "Historic, atmospheric medieval center full of shops and restaurants.",
+    "owner": 3,
+    "categories": [
+      5
+    ],
+    "reviews": [],
+    "likes": []
+  }
+},
+{
+  "model": "places.place",
+  "pk": 175,
+  "fields": {
+    "name": "Marina",
+    "description": "Pretty fishing harbor with the Monterosso Giant Statue emerging from the sea.",
+    "owner": 3,
+    "categories": [
+      5
+    ],
+    "reviews": [],
+    "likes": []
+  }
+}
+]
