@@ -24,7 +24,7 @@ class InspirationListCreateView(OwnerListCreateView):
 # Methods: GET, PUT, PATCH, DELETE
 class InspirationDetailView(RetrieveUpdateDestroyAPIView):
     queryset = Inspiration.objects.all()
-    permission_classes = [IsOwnerOrReadOnly]
+    permission_classes = [IsAuthenticatedOrReadOnly]
 
     def get_serializer_class(self):
       if self.request.method == 'PUT':

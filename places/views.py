@@ -1,6 +1,6 @@
 from rest_framework.generics import RetrieveUpdateDestroyAPIView, UpdateAPIView
 from .models import Place
-from lib.views import OwnerListCreateView
+from lib.views import OwnerCreateView
 from lib.permissions import IsOwnerOrReadOnly
 from .serializers.common import PlaceSerializer
 from .serializers.populated import PlaceListSerializer
@@ -10,7 +10,7 @@ from rest_framework.response import Response
 # Path: /places/
 # Methods: GET, POST
 
-class PlaceListCreateView(OwnerListCreateView):
+class PlaceListCreateView(OwnerCreateView):
   queryset = Place.objects.all()
   serializer_class = PlaceSerializer
   permission_classes = [IsAuthenticatedOrReadOnly]
