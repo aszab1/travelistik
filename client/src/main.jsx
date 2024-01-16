@@ -11,11 +11,13 @@ import App from './App.jsx'
 import Register from '../src/components/Register'
 import Login from '../src/components/Login'
 import Home from '../src/components/Home'
+import SingleInspiration from './components/SingleInspiration.jsx'
+
 // import Logout from '../src/components/Logout.jsx';
 
 // actions
 import { registerUser, loginUser } from './utils/actions/auth.js'
-import { getInspirations } from './utils/helpers/loaders.js'
+import { getInspirations, getSingleInspiration } from './utils/helpers/loaders.js'
 
 const router = createBrowserRouter(
   [{
@@ -38,10 +40,14 @@ const router = createBrowserRouter(
       //   action: async () => logoutUser()
       // },
       {
-        path: '/inspirations',
+        path: '/home',
         element: <Home />,
         loader: getInspirations
-        // add loader function
+      },
+      {
+        path: '/home/:id',
+        element: < SingleInspiration />,
+        loader: async ({params}) => getSingleInspiration(params.id)
       }
     ]
   }]
