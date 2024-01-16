@@ -1,9 +1,10 @@
-import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
 
 import './index.css'
+import '/styles/main.scss'
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 // Page components 
 import App from './App.jsx'
@@ -14,6 +15,7 @@ import Home from '../src/components/Home'
 
 // actions
 import { registerUser, loginUser } from './utils/actions/auth.js'
+import { getInspirations } from './utils/helpers/loaders.js'
 
 const router = createBrowserRouter(
   [{
@@ -21,12 +23,12 @@ const router = createBrowserRouter(
     element: <App />,
     children: [
       {
-        path: '/auth/register/',
+        path: '/register',
         element: <Register />,
         action: async ({ request }) => registerUser(request)
       },
       {
-        path: '/auth/login/',
+        path: '/login',
         element: <Login />,
         action: async ({ request }) => loginUser(request)
       },
@@ -36,8 +38,9 @@ const router = createBrowserRouter(
       //   action: async () => logoutUser()
       // },
       {
-        path: '/home/',
+        path: '/inspirations',
         element: <Home />,
+        loader: getInspirations
         // add loader function
       }
     ]

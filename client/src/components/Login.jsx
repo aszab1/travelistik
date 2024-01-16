@@ -1,5 +1,6 @@
 import { useEffect } from "react"
 import { Form, useActionData, useNavigate } from "react-router-dom"
+import { setToken } from "../utils/helpers/common"
 
 
 export default function Login() {
@@ -9,7 +10,7 @@ export default function Login() {
   useEffect(() => {
     if (res?.status === 202) {
       setToken(res.data.token)
-      navigate('/home')
+      navigate('home/')
     }
   }, [res, navigate])
   return (
