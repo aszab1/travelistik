@@ -7,8 +7,12 @@ export default function NavBar() {
   const navigate = useNavigate()
   const location = useLocation()
 
-  const isLoginPage = location.pathname === '/login/'
-  const isRegisterPage = location.pathname === '/register/'
+  const isLoginPage = location.pathname === '/login'
+  const isRegisterPage = location.pathname === '/register'
+
+  const handleClick = () => {
+  navigate('/home')
+  }
 
   return (
     <>
@@ -20,7 +24,7 @@ export default function NavBar() {
             </div>
             <Container fluid style={{ paddingLeft: 0 }}>
               <Nav className="me-auto">
-                <button type='button' className='btn btn-primary' id='/home'>Home</button>
+                <Nav.Link onClick={handleClick}><button type='button' className='btn btn-primary' id='/home'>Home</button></Nav.Link>
                 <Nav className='justify-content-end'>
                   <button type='button' className='btn btn-primary' id='/signout'>Sign out</button>
                   </Nav>

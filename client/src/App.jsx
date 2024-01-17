@@ -26,10 +26,10 @@ function App() {
         <>
           <div>
             <h1>Hello</h1>
-            <Link to={'/login/'}>
+            <Link to={'/login'}>
               <button>Login</button>
             </Link>
-            <Link to={'/register/'}>
+            <Link to={'/register'}>
               <button>Register</button>
             </Link >
           </div>

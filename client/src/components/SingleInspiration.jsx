@@ -2,7 +2,7 @@ import { useLoaderData, Link } from "react-router-dom"
 
 // Bootstrap
 import { Card, Container } from "react-bootstrap"
-import Accordion from 'react-bootstrap/Accordion'
+
 
 export default function SingleInspiration() {
   const selectedData = useLoaderData()
@@ -10,10 +10,22 @@ export default function SingleInspiration() {
   const owner = selectedData.data.owner.username
   const displayOwner = owner !== 'admin'
   
-  
+  const categ = selectedData.data.places
+  console.log(categ)
 
   const { id, image, city, country, description, places, likes, reviews} = selectedInspiration
   console.log(id, image, city, country, description, places, likes, owner, reviews)
+
+  const groupedPlaces = {};
+  places.forEach(place => {
+    place.categories.forEach(category => {
+      if (!groupedPlaces[category.name]) {
+        groupedPlaces[category.name] = []
+      }
+      groupedPlaces[category.name].push(place)
+    })
+  })
+  console.log(groupedPlaces)
 
   return (
     <>
@@ -26,18 +38,27 @@ export default function SingleInspiration() {
         )}
         <p className="card-text">{description}</p>
       </div>
-      <ul className="list-group list-group-flush">
-        {places.map((place) => (
-        <li className="list-group-item" key={places}>
-          <strong>Name:</strong> {place.name}<br />
-                <strong>Description:</strong> {place.description}<br />
-                <div></div>
-                
-          </li>
-        ))}  
-      </ul>
-
-    </div>
+      {Object.entries(groupedPlaces).map(([category, categoryPlaces], index) => (
+          <div key={index}>
+            <h3>{category}</h3>
+            <div className="row row-cols-1 row-cols-md-3 g-4">
+              {categoryPlaces.map((place, placeIndex) => (
+                <div className="col" key={placeIndex}>
+                  <Card className="h-100">
+                    <Card.Body>
+                      <Card.Title>{place.name}</Card.Title>
+                      <Card.Text>{place.description}</Card.Text>
+                    </Card.Body>
+                    <Card.Footer>
+                      <small className="text-muted">Leave a Review</small>
+                    </Card.Footer>
+                  </Card>
+                </div>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
     </>
   )
 }

@@ -18,7 +18,7 @@ export default function Inspirations({ inspirations }) {
             
               <Col as={Link} 
                 key={id}
-                xs={3}
+                s={2}
                 md={3}
                 lg={3}
                 className='inspo-column'
