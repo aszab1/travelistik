@@ -8,9 +8,10 @@ export default function Login() {
   const navigate = useNavigate()
 
   useEffect(() => {
-    if (res?.status === 202) {
-      setToken(res.data.token)
+    if (res?.status === 200) {
+      setToken(res.data.access)
       navigate('/home')
+      
     }
   }, [res, navigate])
   return (

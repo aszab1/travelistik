@@ -2,8 +2,7 @@ import { Link, Outlet, useLocation, useNavigation } from 'react-router-dom'
 import NavBar from './components/Nav'
 
 
-
-function App() {
+export default function App() {
   const currentPage = useLocation().pathname
   const navigation = useNavigation()
   
@@ -18,7 +17,9 @@ function App() {
               navigation.state === 'idle' ?
                 <Outlet />
                 :
+                <div className='centred'>
                 <div className='loading'></div>
+                </div>
             }
           </main>
         </>
@@ -38,5 +39,3 @@ function App() {
     </>
   )
 }
-
-export default App

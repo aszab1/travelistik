@@ -1,4 +1,4 @@
-import { useLoaderData, Link } from "react-router-dom"
+import { useLoaderData, Link, Form } from "react-router-dom"
 
 // Bootstrap
 import { Card, Container } from "react-bootstrap"
@@ -10,11 +10,10 @@ export default function SingleInspiration() {
   const owner = selectedData.data.owner.username
   const displayOwner = owner !== 'admin'
   
-  const categ = selectedData.data.places
-  console.log(categ)
-
-  const { id, image, city, country, description, places, likes, reviews} = selectedInspiration
+  
+  const { id, image, city, country, description, places, likes, reviews } = selectedInspiration
   console.log(id, image, city, country, description, places, likes, owner, reviews)
+  console.log(selectedInspiration)
 
   const groupedPlaces = {};
   places.forEach(place => {
@@ -58,6 +57,10 @@ export default function SingleInspiration() {
             </div>
           </div>
         ))}
+        <Link to={`/home/${id}/edit`}>Edit</Link>
+        <Form method="POST">
+          <button>Delete</button>
+        </Form>
       </div>
     </>
   )

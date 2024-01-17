@@ -1,5 +1,5 @@
 import axios from "axios"
-import { formToObj } from "../helpers/common"
+import { formToObj, removeToken } from "../helpers/common"
 
 export async function registerUser(request){
   const data = await formToObj(request)
@@ -13,4 +13,8 @@ export async function loginUser(request){
     return await axios.post('/api/auth/login/', data, {
     validateStatus: () => true
   })
+}
+
+export async function logoutUser(){
+  removeToken()
 }

@@ -33,7 +33,6 @@ export function activeUser(){
   const now = Date.now() / 1000
   const exp = payload.exp
   if (exp > now) {
-    console.log(payload)
-    return payload.sub
+    return payload.jti
   }
 }
