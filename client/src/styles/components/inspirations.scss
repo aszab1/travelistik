@@ -1,0 +1,57 @@
+
+.inspo-column {
+  margin: 1em;
+  &:hover {
+    background-size: 120%;
+  }
+}
+
+.inspo-div {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 40px;
+  width: 300px;
+  height: 300px;
+  border-radius: 5px; 
+}
+
+.inspiration {
+  box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.4), 0 6px 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+p {
+  
+}
+
+
+.inspo {
+  padding-right: 0; 
+  
+  background: #8e1f1f; 
+  padding: 20px; 
+}
+
+
+.sidebar-container {
+  background-color: #a29e9e; 
+  margin-top: 20px; 
+  padding: 20px; 
+}
+
+
+.sidebar-message {
+  p {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+
+  .btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: inline-block;
+  }
+}

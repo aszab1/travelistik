@@ -10,3 +10,4 @@ export async function getSingleInspiration(id) {
   const inspiration = await axios.get(`/api/inspirations/${id}/`)
   return inspiration
 }
+

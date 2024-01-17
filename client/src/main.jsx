@@ -2,9 +2,9 @@ import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
 
-import './index.css'
+// import './index.css'
 
-import '/styles/main.scss'
+import './styles/main.scss'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 // Page components 
