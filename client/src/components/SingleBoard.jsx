@@ -2,27 +2,19 @@ import { useLoaderData, Link, Form } from "react-router-dom"
 
 
 // Bootstrap
-import { Card, Container } from "react-bootstrap"
+import { Card } from "react-bootstrap"
 
 
 
-
-export default function SingleInspiration() {
+export default function SingleBoard() {
   const selectedData = useLoaderData()
-  const selectedInspiration = selectedData.data
-  const owner = selectedData.data.owner.username
-  
- 
-  const displayOwner = owner !== 'admin'
+  const selectedBoard = selectedData.data
   
   
-  const { id, image, city, country, description, places, likes, reviews,} = selectedInspiration
-  console.log(selectedInspiration)
+  
+  const { id, image, city, country, description, places } = selectedBoard
+  console.log(selectedBoard)
 
- 
-  console.log(selectedInspiration.owner.id)
-
-  
 
   const groupedPlaces = {};
   places.forEach(place => {
@@ -34,7 +26,6 @@ export default function SingleInspiration() {
     })
   })
   
-  
 
   return (
     <>
@@ -42,19 +33,17 @@ export default function SingleInspiration() {
       <img src={image} className="card-img-top" alt={city}></img>
       <div className="card-body">
         <h5 className="card-title">{city}, {country}</h5>
-        {displayOwner && (
-        <p>Created by user {owner}</p>
-        )}
-        {owner === owner.id && 
+
+        {/* {activeUser() === selectedInspiration.addedBy.username.id &&  */}
           
           <>
-        <Link to={`/home/${id}/edit`}>Edit</Link>
+        <Link to={`/boards/${id}/edit`}>Edit</Link>
         <Form method="POST">
           <button>Delete</button>
         </Form>
         
         </>
-      }
+      {/* } */}
       
       </div>
       
@@ -85,6 +74,3 @@ export default function SingleInspiration() {
     </>
   )
 }
-
-
-
