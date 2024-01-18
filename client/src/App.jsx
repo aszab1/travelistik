@@ -17,7 +17,9 @@ export default function App() {
               navigation.state === 'idle' ?
                 <Outlet />
                 :
+                <div className='centered'>
                 <div className='loading'></div>
+                </div>
             }
           </main>
         </>

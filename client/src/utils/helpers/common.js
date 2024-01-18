@@ -20,7 +20,7 @@ export function removeToken(){
 
 // This function will decode the JWT token in localstorage
 // If the token does not exist, will return null
-// If the token exists, we will decode, validate expiry date, return the payload.sub
+// If the token exists, we will decode, validate expiry date, return the payload.jti
 export function activeUser(){
   // Get token from localstorage
   const token = getToken()
@@ -36,3 +36,4 @@ export function activeUser(){
     return payload.jti
   }
 }
+console.log(activeUser())

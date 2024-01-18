@@ -9,6 +9,7 @@ export default function Register(){
     if (res?.status === 201) {
       navigate('/login')
     }
+    // console.log(res.data)
   }, [res, navigate])
 
   return (

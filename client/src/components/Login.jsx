@@ -11,7 +11,7 @@ export default function Login() {
     if (res?.status === 200) {
       setToken(res.data.access)
       navigate('/home')
-      
+      console.log(res.data)
     }
   }, [res, navigate])
   return (

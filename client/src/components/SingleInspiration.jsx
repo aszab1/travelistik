@@ -1,7 +1,9 @@
 import { useLoaderData, Link, Form } from "react-router-dom"
+import { activeUser } from "../utils/helpers/common"
 
 // Bootstrap
 import { Card, Container } from "react-bootstrap"
+
 
 
 export default function SingleInspiration() {
@@ -12,8 +14,10 @@ export default function SingleInspiration() {
   
   
   const { id, image, city, country, description, places, likes, reviews } = selectedInspiration
-  console.log(id, image, city, country, description, places, likes, owner, reviews)
   console.log(selectedInspiration)
+
+  console.log((activeUser()));
+  console.log(selectedInspiration.owner.id)
 
   const groupedPlaces = {};
   places.forEach(place => {
@@ -24,7 +28,7 @@ export default function SingleInspiration() {
       groupedPlaces[category.name].push(place)
     })
   })
-  console.log(groupedPlaces)
+  
 
   return (
     <>
@@ -35,6 +39,19 @@ export default function SingleInspiration() {
         {displayOwner && (
         <p>Created by user {owner}</p>
         )}
+        {/* {activeUser() === selectedInspiration.owner.id &&  */}
+          
+          <>
+        <Link to={`/home/${id}/edit`}>Edit</Link>
+        <Form method="POST">
+          <button>Delete</button>
+        </Form>
+        
+        </>
+      {/* } */}
+      
+      </div>
+      
         <p className="card-text">{description}</p>
       </div>
       {Object.entries(groupedPlaces).map(([category, categoryPlaces], index) => (
@@ -57,11 +74,8 @@ export default function SingleInspiration() {
             </div>
           </div>
         ))}
-        <Link to={`/home/${id}/edit`}>Edit</Link>
-        <Form method="POST">
-          <button>Delete</button>
-        </Form>
-      </div>
+        
+      
     </>
   )
 }
