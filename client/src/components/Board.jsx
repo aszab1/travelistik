@@ -1,14 +1,22 @@
 import { Link } from 'react-router-dom'
+import { useEffect, useState } from 'react'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import { alignPropType } from 'react-bootstrap/esm/types'
+import { getBoards } from '../utils/helpers/boardLoaders'
+import { activeUser } from '../utils/helpers/common'
 
 
-export default function Board({ boards }) {
 
-  
-  
+export default function Board() {
+
+  const [boards, setBoards ] = useState([])
+
+  useEffect(() => {
+    getBoards().then(boards => setBoards(boards.data))
+  }, [])
+  console.log(boards)
   return (
     <>
       <h3>Your Boards</h3>
@@ -16,7 +24,9 @@ export default function Board({ boards }) {
       <Row className='board-row'>
         {boards && boards.map((board) => {
           const { id, image, city, country } = board
-          console.log(board)
+          {activeUser() === board.id &&  
+            console.log(board.id)
+          
           return (
             
               <Col as={Link} 
@@ -37,9 +47,11 @@ export default function Board({ boards }) {
                   </section>
               </Col>
           )
-        })}
+        }})}
+      
         </Row>
       </Container>
     </>
+      
   )
 }

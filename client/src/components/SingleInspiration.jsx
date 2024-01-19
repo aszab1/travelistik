@@ -1,5 +1,5 @@
 import { useLoaderData, Link, Form } from "react-router-dom"
-
+import { activeUser } from "../utils/helpers/common"
 
 // Bootstrap
 import { Card, Container } from "react-bootstrap"
@@ -11,8 +11,7 @@ export default function SingleInspiration() {
   const selectedData = useLoaderData()
   const selectedInspiration = selectedData.data
   const owner = selectedData.data.owner.username
-  
- 
+
   const displayOwner = owner !== 'admin'
   
   
@@ -45,7 +44,7 @@ export default function SingleInspiration() {
         {displayOwner && (
         <p>Created by user {owner}</p>
         )}
-        {owner === owner.id && 
+        {/* {activeUser() === selectedInspiration.owner.id && */}
           
           <>
         <Link to={`/home/${id}/edit`}>Edit</Link>
@@ -54,7 +53,7 @@ export default function SingleInspiration() {
         </Form>
         
         </>
-      }
+      {/* } */}
       
       </div>
       

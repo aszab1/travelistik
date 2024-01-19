@@ -1,7 +1,7 @@
 import Container from "react-bootstrap/esm/Container"
 import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
-import { useNavigate, useLocation } from 'react-router-dom'
+import { useNavigate, useLocation, Link } from 'react-router-dom'
 import { getToken, removeToken } from "../utils/helpers/common"
 import { activeUser } from "../utils/helpers/common"
 
@@ -13,8 +13,8 @@ export default function NavBar() {
   const isRegisterPage = location.pathname === '/register'
 
 
-  const handleClick = () => {
-  navigate('/home')
+  const handleClick = (path) => {
+    navigate(path)
   }
 
   const handleLogOut = () => {
@@ -26,14 +26,18 @@ export default function NavBar() {
       {!(isLoginPage || isRegisterPage) && (
 
         <>
-          <Navbar className="navbar" bg="primary" data-bs-theme="dark">
+          <Navbar className='navbar' bg='primary' data-bs-theme='dark'>
             <div className="logo">
             </div>
             <Container fluid style={{ paddingLeft: 0 }}>
               <Nav className="me-auto">
-                <Nav.Link onClick={handleClick}><button type='button' className='btn btn-primary' id='/home'>Home</button></Nav.Link>
+                <Nav.Link as={Link} to='/home'>Home</Nav.Link>
+                <Nav>
+                <Nav.Link as={Link} to='/boards'>Board</Nav.Link>
+                </Nav>
                 <Nav className='justify-content-end'>
-                <Nav.Link onClick={handleLogOut}><button type='button' className='btn btn-primary' id='/signout'>Logout</button></Nav.Link>
+
+                <Nav.Link onClick={handleLogOut}>Logout</Nav.Link>
                   </Nav>
                   </Nav>
                 </Container>

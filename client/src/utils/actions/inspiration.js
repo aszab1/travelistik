@@ -19,6 +19,7 @@ export async function editInspiration(request, id) {
   return await axios.put(`/api/inspirations/${id}/`, data, {
     validateStatus: () => true,
     headers: {
+      'Content-Type': 'application/json',
       Authorization: `Bearer ${getToken()}`
     }
   })

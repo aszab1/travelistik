@@ -82,6 +82,7 @@ const router = createBrowserRouter(
         path: '/boards',
         element: <Board />,
         loader: getBoards
+       
       },
       {
         path: '/boards/:id',

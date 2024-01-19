@@ -11,6 +11,7 @@ export async function createBoard(request) {
       Authorization: `Bearer ${getToken()}`
     }
   })
+  
 }
 
 export async function editBoard(request, id) {
@@ -33,3 +34,14 @@ export async function deleteBoard(id) {
   })
   return redirect('/boards')
 }
+
+// export async function getBoards(request) {
+//   const data = await formToObj(request)
+//   console.log(data)
+//   return await axios.get('/api/boards/', data, {
+//     validateStatus: () => true,
+//     headers: {
+//       Authorization: `Bearer ${getToken()}`
+//     }
+//   })
+// }

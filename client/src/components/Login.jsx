@@ -22,7 +22,7 @@ export default function Login() {
           <input type="text" name="username" placeholder='Username' />
           <input type="password" name="password" placeholder='Password' />
           <button type="submit">Login</button>
-          {res && <p className='danger'>{res.data.message}</p>}
+          {res && <p className='danger'>{res.data.detail}</p>}
           </div>
 
         </Form>
