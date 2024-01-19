@@ -27,7 +27,7 @@ export default function App() {
         :
         <>
           <div>
-            <h1>Hello</h1>
+            <h1 className='hello'>Hello</h1>
             <LandingCard />
             <Link to={'/login'}>
               <button>Login</button>

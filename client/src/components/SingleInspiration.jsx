@@ -34,6 +34,7 @@ export default function SingleInspiration() {
   })
   
   
+  
 
   return (
     <>
@@ -80,10 +81,9 @@ export default function SingleInspiration() {
           </div>
         ))}
         
-      
+
     </>
   )
 }
-
 
 

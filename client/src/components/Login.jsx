@@ -1,6 +1,7 @@
 import { useEffect } from "react"
-import { Form, useActionData, useNavigate } from "react-router-dom"
 import { setToken } from "../utils/helpers/common"
+import { Form, useActionData, useNavigate } from "react-router-dom"
+import { Input, Stack } from '@chakra-ui/react'
 
 
 export default function Login() {
@@ -15,18 +16,19 @@ export default function Login() {
     }
   }, [res, navigate])
   return (
-    <div>
-      <div>
+    
+      <div className="login-div">
         <Form className="login-form" method="POST">
-          <div>
-          <input type="text" name="username" placeholder='Username' />
-          <input type="password" name="password" placeholder='Password' />
+        <Stack spacing={3}>
+          
+        <Input variant='flushed' name="username" placeholder='Username' />
+        <Input variant='flushed' name="password" placeholder='Password' />
           <button type="submit">Login</button>
           {res && <p className='danger'>{res.data.detail}</p>}
-          </div>
+          </Stack>
 
         </Form>
       </div>
-    </div>
+    
   )
 }
