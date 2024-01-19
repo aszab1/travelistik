@@ -16,7 +16,7 @@ class InspirationListCreateView(OwnerListCreateView):
 
   def get_serializer_class(self):
       if self.request.method == 'GET':
-        return InspirationListSerializer
+        return InspirationSerializer
       return InspirationSerializer
   
 

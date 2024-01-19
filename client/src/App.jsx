@@ -1,5 +1,6 @@
 import { Link, Outlet, useLocation, useNavigation } from 'react-router-dom'
 import NavBar from './components/Nav'
+import LandingCard from './components/LandingCard'
 
 
 export default function App() {
@@ -27,6 +28,7 @@ export default function App() {
         <>
           <div>
             <h1>Hello</h1>
+            <LandingCard />
             <Link to={'/login'}>
               <button>Login</button>
             </Link>

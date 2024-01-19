@@ -44,7 +44,7 @@ export default function SingleInspiration() {
         {displayOwner && (
         <p>Created by user {owner}</p>
         )}
-        {/* {activeUser() === selectedInspiration.owner.id && */}
+        {activeUser() === selectedInspiration.owner.id &&
           
           <>
         <Link to={`/home/${id}/edit`}>Edit</Link>
@@ -53,7 +53,7 @@ export default function SingleInspiration() {
         </Form>
         
         </>
-      {/* } */}
+      }
       
       </div>
       

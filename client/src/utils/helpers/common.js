@@ -6,8 +6,8 @@ export async function formToObj(request){
   return Object.fromEntries(formData.entries())
 }
 
-export function setToken(token){
-  localStorage.setItem(tokenName, token)
+export function setToken(access){
+  localStorage.setItem(tokenName, access)
 }
 
 export function getToken(){
@@ -18,9 +18,7 @@ export function removeToken(){
   localStorage.removeItem(tokenName)
 }
 
-// This function will decode the JWT token in localstorage
-// If the token does not exist, will return null
-// If the token exists, we will decode, validate expiry date, return the payload.jti
+
 export function activeUser(){
   // Get token from localstorage
   const token = getToken()
@@ -29,11 +27,12 @@ export function activeUser(){
   // If token exists
   const b64 = token.split('.')[1]
   const payload = JSON.parse(atob(b64))
+  console.log('payload', payload)
 
   const now = Date.now() / 1000
   const exp = payload.exp
   if (exp > now) {
-    return payload.jti
+    return payload.user_id
   }
 }
-console.log(activeUser())
+console.log('activeuser', activeUser())
