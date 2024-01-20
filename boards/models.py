@@ -5,6 +5,7 @@ class Board(models.Model):
   city = models.CharField(max_length=255)
   country = models.CharField(max_length=255)
   description = models.TextField(max_length=2000)
+  image = models.URLField(max_length=2000)
   owner = models.ForeignKey(
     to='users.User',
     on_delete=models.CASCADE,

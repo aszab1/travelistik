@@ -24,8 +24,8 @@ export default function Register() {
               <Input variant='flushed' name="last_name" placeholder='Last Name' />
               <Input variant='flushed' name="username" placeholder='Username' />
               <Input variant='flushed' name="email" placeholder='Email' />
-              <Input variant='flushed' name="password" placeholder='Password' />
-              <Input variant='flushed' name="password_confirmation" placeholder='Password confirmation' />
+              <Input variant='flushed' type='password' name="password" placeholder='Password' />
+              <Input variant='flushed' type='password' name="password_confirmation" placeholder='Password confirmation' />
               <button type="submit">Register</button>
               {res && <p className='danger'>{res.data.message}</p>}
             </Stack>

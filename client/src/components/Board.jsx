@@ -4,28 +4,32 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import { alignPropType } from 'react-bootstrap/esm/types'
-import { getBoards } from '../utils/helpers/boardLoaders'
 import { activeUser } from '../utils/helpers/common'
+import { getBoards } from '../utils/helpers/boardLoaders'
 
 
 
 export default function Board() {
 
-  const [boards, setBoards ] = useState([])
+  const [ boards, setBoards]  = useState([])
 
   useEffect(() => {
-    getBoards().then(boards => setBoards(boards.data))
-  }, [])
-  console.log(boards)
+    getBoards().then(response => {
+      console.log(response.data)
+      setBoards(response.data)
+    });
+  }, []);
+  
+  const userBoards = boards.filter(board => activeUser() === board.owner)
+
   return (
     <>
       <h3>Your Boards</h3>
       <Container fluid className='board'>
       <Row className='board-row'>
-        {boards && boards.map((board) => {
+        {userBoards.map((board) => {
           const { id, image, city, country } = board
-          {activeUser() === board.id &&  
-            console.log(board.id)
+          
           
           return (
             
@@ -39,7 +43,7 @@ export default function Board() {
                 >
                   <section className='boards'>
                 <div className='board-div' 
-                style={{ backgroundImage: `url(${image})` }} alt={city}>
+                style={{ backgroundImage: `url(${image})`}}>
                 </div>
                 <div>
                   <p>{city} {country}</p> 
@@ -47,11 +51,15 @@ export default function Board() {
                   </section>
               </Col>
           )
-        }})}
+        })}
       
         </Row>
       </Container>
+      <div className="board-create">
+      <p>{userBoards.length === 0 ? 'Create your first board' : 'Add a new board'}</p>
+      <Link to="/boards/create" className="btn btn-primary">Create</Link>
+    </div>
+        
     </>
-      
   )
 }

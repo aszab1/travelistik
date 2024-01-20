@@ -1,13 +1,27 @@
 import axios from "axios"
+import { getToken } from "./common"
 
 
+// export async function getBoards() {
+//   const boardList = await axios.get('/api/boards/')
+//   return boardList
+// }
 export async function getBoards() {
-  const boardList = await axios.get('/api/boards/')
-  return boardList
+  return await axios.get('/api/boards/', {
+    validateStatus: () => true,
+    headers: {
+      Authorization: `Bearer ${getToken()}`
+    }
+  })
 }
 
+
 export async function getSingleBoard(id) {
-  const board = await axios.get(`/api/boards/${id}/`)
-  return board 
+  return await axios.get(`/api/boards/${id}`, {
+    validateStatus: () => true,
+    headers: {
+      Authorization: `Bearer ${getToken()}`
+    }
+  })
 }
 

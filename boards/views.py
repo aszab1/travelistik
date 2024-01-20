@@ -12,7 +12,7 @@ from rest_framework import status
 # Method: GET, POST
 class BoardListCreateView(OwnerListCreateView):
   queryset = Board.objects.all()
-  permission_classes = [IsAuthenticatedOrReadOnly]
+  permission_classes = [IsOwnerOrReadOnly]
 
   def get_serializer_class(self):
     if self.request.method == 'GET':
@@ -25,7 +25,7 @@ class BoardListCreateView(OwnerListCreateView):
   
 class BoardDetailView(RetrieveUpdateDestroyAPIView):
   queryset = Board.objects.all()
-  permission_classes = [IsAuthenticatedOrReadOnly]
+  permission_classes = [IsOwnerOrReadOnly]
 
   def get_serializer_class(self):
     if self.request.method == 'GET':

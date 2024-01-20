@@ -34,14 +34,3 @@ export async function deleteBoard(id) {
   })
   return redirect('/boards')
 }
-
-// export async function getBoards(request) {
-//   const data = await formToObj(request)
-//   console.log(data)
-//   return await axios.get('/api/boards/', data, {
-//     validateStatus: () => true,
-//     headers: {
-//       Authorization: `Bearer ${getToken()}`
-//     }
-//   })
-// }

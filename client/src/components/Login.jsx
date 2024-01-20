@@ -22,7 +22,7 @@ export default function Login() {
         <Stack spacing={3}>
           
         <Input variant='flushed' name="username" placeholder='Username' />
-        <Input variant='flushed' name="password" placeholder='Password' />
+        <Input variant='flushed' type='password' name="password" placeholder='Password' />
           <button type="submit">Login</button>
           {res && <p className='danger'>{res.data.detail}</p>}
           </Stack>

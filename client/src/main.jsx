@@ -27,9 +27,9 @@ import { registerUser, loginUser, logoutUser } from './utils/actions/auth.js'
 
 // Actions
 import { getInspirations, getSingleInspiration} from './utils/helpers/loaders.js'
-import { getBoards, getSingleBoard } from './utils/helpers/boardLoaders.js'
+import {getBoards, getSingleBoard} from './utils/helpers/boardLoaders.js'
 import { createInspiration, editInspiration, deleteInspiration } from './utils/actions/inspiration.js'
-import { createBoard, editBoard, deleteBoard } from './utils/actions/boards.js'
+import { createBoard, editBoard, deleteBoard} from './utils/actions/boards.js'
 
 
 const router = createBrowserRouter(
@@ -80,7 +80,7 @@ const router = createBrowserRouter(
       {
         path: '/boards',
         element: <Board />,
-        loader: getBoards
+        loader: getBoards 
       },
       {
         path: '/boards/:id',

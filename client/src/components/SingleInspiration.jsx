@@ -38,7 +38,7 @@ export default function SingleInspiration() {
 
   return (
     <>
-    <div className="card">
+    <div className="single-card">
       <img src={image} className="card-img-top" alt={city}></img>
       <div className="card-body">
         <h5 className="card-title">{city}, {country}</h5>
