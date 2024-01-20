@@ -1,7 +1,7 @@
 import { useEffect } from "react"
 import { Form, useActionData, useNavigate, useLoaderData} from "react-router-dom"
 
-export default function BoardnEdit() {
+export default function BoardEdit() {
   const res = useActionData()
   const navigate = useNavigate()
   const board = useLoaderData() 

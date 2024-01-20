@@ -22,44 +22,40 @@ export default function Board() {
   
   const userBoards = boards.filter(board => activeUser() === board.owner)
 
-  return (
-    <>
-      <h3>Your Boards</h3>
-      <Container fluid className='board'>
-      <Row className='board-row'>
-        {userBoards.map((board) => {
-          const { id, image, city, country } = board
-          
-          
-          return (
-            
-              <Col as={Link} 
-                key={id}
-                s={2}
-                md={3}
-                lg={3}
-                className='board-column text-decoration-none'
-                to={`/boards/${id}`}
-                >
-                  <section className='boards'>
-                <div className='board-div' 
-                style={{ backgroundImage: `url(${image})`}}>
-                </div>
-                <div>
-                  <p>{city} {country}</p> 
-                </div>
-                  </section>
-              </Col>
-          )
-        })}
-      
-        </Row>
-      </Container>
-      <div className="board-create">
-      <p>{userBoards.length === 0 ? 'Create your first board' : 'Add a new board'}</p>
-      <Link to="/boards/create" className="btn btn-primary">Create</Link>
-    </div>
-        
-    </>
-  )
-}
+  
+    return (
+      <>
+        <Container fluid className='board' style={{ textAlign: 'center' }}> 
+          <h3 className='board-text' style={{ display: 'inline-block' }}>Your Boards</h3>
+  
+          <Row className='board-row' style={{ marginTop: '20px' }}>
+            {userBoards.map((board) => {
+              const { id, image, city } = board;
+              
+              return (
+                <Col as={Link} 
+                  key={id}
+                  s={2}
+                  md={3}
+                  lg={4}
+                  className='board-column text-decoration-none'
+                  to={`/boards/${id}`}>
+                  <div className='col boards'>
+                    <div className='card'>
+                      <img className='board-image' src={image} alt={city}/>
+                      <div className='card-title'>{city}</div> 
+                    </div>
+                  </div>
+                </Col>
+              );
+            })}
+          </Row>
+          <div className="board-create" style={{ display: 'inline-block', marginLeft: '20px' }}>
+            <p className='button-text'>{userBoards.length === 0 ? 'Create your first board' : 'Add a new board'}</p>
+            <Link to="/boards/create" className="btn btn-primary">Create</Link>
+          </div>
+        </Container>
+      </>
+    );
+  }
+  

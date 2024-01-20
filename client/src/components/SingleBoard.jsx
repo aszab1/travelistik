@@ -1,4 +1,5 @@
 import { useLoaderData, Link, Form } from "react-router-dom"
+import BoardNavBar from "./BoardNavBar"
 
 
 // Bootstrap
@@ -29,12 +30,13 @@ export default function SingleBoard() {
 
   return (
     <>
-    <div className="card">
+    <BoardNavBar>
+    {/* <div className="card">
       <img src={image} className="card-img-top" alt={city}></img>
       <div className="card-body">
-        <h5 className="card-title">{city}, {country}</h5>
+        <h5 className="card-title">{city}, {country}</h5> */}
 
-        {/* {activeUser() === selectedInspiration.addedBy.username.id &&  */}
+        
           
           <>
         <Link to={`/boards/${id}/edit`}>Edit</Link>
@@ -43,12 +45,9 @@ export default function SingleBoard() {
         </Form>
         
         </>
-      {/* } */}
       
-      </div>
       
-        <p className="card-text">{description}</p>
-      </div>
+        {/* <p className="card-text">{description}</p> */}
       {Object.entries(groupedPlaces).map(([category, categoryPlaces], index) => (
           <div key={index}>
             <h3>{category}</h3>
@@ -70,7 +69,7 @@ export default function SingleBoard() {
           </div>
         ))}
         
-      
+        </BoardNavBar>
     </>
   )
 }

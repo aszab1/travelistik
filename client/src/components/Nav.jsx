@@ -2,8 +2,8 @@ import Container from "react-bootstrap/esm/Container"
 import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
 import { useNavigate, useLocation, Link } from 'react-router-dom'
-import { getToken, removeToken } from "../utils/helpers/common"
-import { activeUser } from "../utils/helpers/common"
+import { removeToken } from "../utils/helpers/common"
+
 
 export default function NavBar() {
   const navigate = useNavigate()
