@@ -27,14 +27,15 @@ export default function App() {
         :
         <>
           <div>
-            <h1 className='hello'>Hello</h1>
             <LandingCard />
+            <div className='landing-buttons'>
             <Link to={'/login'}>
               <button>Login</button>
             </Link>
             <Link to={'/register'}>
               <button>Register</button>
             </Link >
+          </div>
           </div>
         </>
       }

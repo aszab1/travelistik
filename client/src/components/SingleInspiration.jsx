@@ -13,7 +13,7 @@ export default function SingleInspiration() {
   const displayOwner = owner !== 'admin'
   
   
-  const { id, image, city, country, description, places} = selectedInspiration
+  const { id, image, city, country, description, places, reviews} = selectedInspiration
   console.log(selectedInspiration)
 
  
@@ -84,6 +84,16 @@ export default function SingleInspiration() {
             </HStack>
           </Box>
         ))}
+        <Box>
+          <Text fontSize="xl" fontWeight="bold">Reviews</Text>
+          {reviews && reviews.map((review, index) => (
+            <Box key={index} p={4} borderWidth="1px" borderRadius="lg">
+              <Text fontWeight="bold">{review.owner.username}</Text>
+              <Text fontSize="sm">{review.text}</Text>
+              <Text fontSize="xs">{new Date(review.created_at).toLocaleDateString()}</Text>
+            </Box>
+          ))}
+        </Box>
       </VStack>
     </>
   )

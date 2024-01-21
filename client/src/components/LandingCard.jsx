@@ -1,16 +1,45 @@
-import { Box, Image, Text, Heading } from '@chakra-ui/react'
+import { useState, useEffect } from 'react'
+import { Box, Heading, Text, Image, Card, Stack, CardBody } from '@chakra-ui/react'
 
-export default function LandingCard(){
+// Local images
+import machuPicchu from '../assets/images/MachuPicchu.jpg'
+import petra from '../assets/images/Petra.jpg'
+import babylon from '../assets/images/HangingGardensOfBabylon.jpg'
+import pyramid from '../assets/images/pyramid.jpg'
+import rio from '../assets/images/Rio.jpg'
+import colosseum from '../assets/images/RomanColosseum.jpg'
+
+export default function LandingCard() {
+  const images = [machuPicchu, petra, pyramid, rio, colosseum, babylon]
+  const [currentImageIndex, setCurrentImageIndex] = useState(0)
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((currentImageIndex) => (currentImageIndex + 1) % images.length)
+    }, 5500)
+
+    return () => clearInterval(interval);
+  }, [images.length])
 
   return (
-    <Box d="flex" borderWidth="1px" borderRadius="lg" overflow="hidden">
-    <Box p="6">
-      <Heading mb="4">Discover and Organize Your Favorite Places!</Heading>
-      <Text>
-        Discovered a trendy cafe on social media? Got a tip about a must-visit restaurant? Looking for travel destination ideas? How will you keep track of them all? Skip the hassle of notes, screenshots, and messages. Effortlessly save, categorize, and share your favorite spots in cities across the globe!
-      </Text>
-    </Box>
-    <Image src="path_to_your_image.jpg" alt="image" />
-  </Box>
+    <Card className='landing-div'
+  direction={{ base: 'column', lg: 'row' }}
+  overflow='hidden'
+  variant='outline'
+>
+      <Stack>
+        <CardBody className='landing-body'>
+        <Heading className='heading-text' size='md'>Discover and Organize Your Favorite Places with Travelistik!</Heading>
+        <Text className='landing-text'>
+        Got a tip about a must-visit restaurant? < br />Discovered a trendy bar on social media?  <br/> Looking for travel destination ideas? <br /> Effortlessly save and share your favorite spots in cities across the globe!
+        </Text>
+        </CardBody>
+      </Stack>
+      <Box width={{ base: '100%', sm: '50%' }}>
+        <Image className='landing-img' src={images[currentImageIndex]} alt={`image ${currentImageIndex + 1}`} />
+      </Box>
+    </Card>
   )
 }
+
+

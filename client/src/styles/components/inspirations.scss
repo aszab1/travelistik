@@ -1,10 +1,13 @@
+
+
 .inspo-div {
   margin: 50px;
 }
 
 .inspo-card {
 border-radius: 3px;
-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0,19)
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0,19);
+background-color: white;
 }
   .inspo-image {
     width: 100%;
@@ -36,4 +39,10 @@ h3 {
     border-radius: 5px;
     display: inline-block;
   }
+}
+.inspo-content {
+  padding: 20px;
+  margin: 20px 0 15px 10px;
+  font-size: medium;
+  font-weight: bold;
 }

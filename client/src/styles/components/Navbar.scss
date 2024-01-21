@@ -1,0 +1,60 @@
+nav {
+  height: 200px;
+  padding: 2em;
+}
+
+a.nav-link {
+  padding: 0px;
+  margin: 20px 10px 10px 40px;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: bold;
+}
+
+.navbar.navbar.navbar-expand.navbar-light.bg-primary {
+  // .logo {
+  //   display: flex;
+  //   margin-right: auto;
+  //   img{
+  //     margin: 10px 0;
+  //     width: 250px;
+  //   }
+  // }
+  // padding: 0 50px;
+  // width: 100%;
+  // flex-direction: column;
+
+  // background image of navbar
+  background-image: url(../assets/images/cloud.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  // display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+
+  .container-fluid {
+    margin-top: auto;
+
+    .me-auto.navbar-nav,
+    .justify-content-end.navbar-nav {
+
+      .nav-link {
+        padding: 0;
+        justify-content: center;
+      }
+    }
+  }
+}
+
+
+.navbar-expand .navbar-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  margin-right: 70px;
+  width: 100vw;
+}
+

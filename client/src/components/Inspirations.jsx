@@ -1,14 +1,23 @@
 import { Link as RouterLink } from 'react-router-dom'
-import { Box, Image, Text, Button, Grid, Flex, Heading, Container, Card, CardHeader, CardBody, CardFooter } from '@chakra-ui/react'
+import { Box, Image, Text, Button, Grid, Flex, Heading, Container, Card, CardHeader, CardBody, CardFooter,useDisclosure } from '@chakra-ui/react'
 import { BiLike, BiChat } from 'react-icons/bi'
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 import { getToken } from '../utils/helpers/common'
+import ReviewForm from './Reviewform'
 
 
 export default function Inspirations({ inspirations }) {
 
   const [likes, setLikes] = useState({})
+  const { isOpen, onOpen, onClose } = useDisclosure();
+  const [selectedInspirationId, setSelectedInspirationId] = useState(null)
+
+  const handleReviewButtonClick = (id) => {
+    setSelectedInspirationId(id);
+    onOpen();
+  };
+
 
   
 
@@ -28,7 +37,7 @@ export default function Inspirations({ inspirations }) {
           Authorization: `Bearer ${getToken()}`
         } 
       })
-      console.log("Updated Likes: ", likes)
+      console.log(likes)
       if (response.status === 201 || response.status === 204) {
         setLikes(prevLikes => {
           const isLiked = prevLikes[id] ? prevLikes[id].liked : false
@@ -75,7 +84,7 @@ export default function Inspirations({ inspirations }) {
                     <Button size="sm" variant='ghost' leftIcon={<BiLike />} onClick={() => handleLike(inspo.id)} colorScheme={likes[inspo.id]?.liked ? 'blue' : 'gray'}>
                     {likeData.count > 0 ? `${likeData.count} Likes` : 'Like'}
                     </Button>
-                    <Button size="sm" variant='ghost' leftIcon={<BiChat />}>Review</Button>
+                    <Button size="sm" variant='ghost' leftIcon={<BiChat />} onClick={() => handleReviewButtonClick(id)}>Review</Button>
                   </CardFooter>
                 </Card>
               )
@@ -87,6 +96,7 @@ export default function Inspirations({ inspirations }) {
           </Box>
         </Flex>
       </Container>
+      <ReviewForm isOpen={isOpen} onClose={onClose} inspirationId={selectedInspirationId} />
     </>
   )
-}
+} 

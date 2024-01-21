@@ -8,3 +8,50 @@
   margin: 0 auto;
 }
 
+.landing-div{
+  margin: 150px 50px 50px 50px;
+  align-items: center;
+}
+
+.landing-img {
+  width: 65%;
+  margin: 20px 20px 20px 150px;
+  border-radius: 3px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.landing-body {
+  padding: 20px;
+  margin: 50px 250px 0 10px;
+  width: 100%;
+  align-content: center;
+}
+
+.heading-text, .landing-text {
+  padding: 10px;
+}
+
+.landing-buttons {
+  text-align: center;
+  margin: 100px;
+  display: flex;
+  justify-content: center; 
+  gap: 20px;
+  color: rgb(96, 214, 218);
+}
+
+button {
+  background-color: rgba(163, 190, 218, 0.6);
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2e80d7;
+}
+
+button:active {
+  position: relative;
+  top: 1px;
+}

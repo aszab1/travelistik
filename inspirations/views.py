@@ -1,7 +1,7 @@
 from rest_framework.generics import RetrieveUpdateDestroyAPIView, UpdateAPIView
 from rest_framework.permissions import IsAuthenticatedOrReadOnly, IsAuthenticated
 from .models import Inspiration
-from .serializers.common import InspirationSerializer
+from .serializers.common import InspirationSerializer, InspirationGetSerializer
 from .serializers.populated import InspirationListSerializer
 from lib.views import OwnerListCreateView
 from lib.permissions import IsOwnerOrReadOnly
@@ -16,7 +16,7 @@ class InspirationListCreateView(OwnerListCreateView):
 
   def get_serializer_class(self):
       if self.request.method == 'GET':
-        return InspirationSerializer
+        return InspirationGetSerializer
       return InspirationSerializer
   
 
