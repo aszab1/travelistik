@@ -14,7 +14,8 @@ class Board(models.Model):
   )
   places = models.ManyToManyField(
     to='places.Place',
-    related_name='boards'
+    related_name='boards',
+    blank=True
   )
   
   def __str__(self):

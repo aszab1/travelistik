@@ -1,6 +1,6 @@
 import { useLoaderData, Link, Form } from "react-router-dom"
 import { activeUser } from "../utils/helpers/common"
-import { Box, Image, Text, Button, VStack, HStack, Card, CardBody, CardHeader, CardFooter } from "@chakra-ui/react"
+import { Box, Image, Text, Button, VStack, HStack, Card, CardBody, CardHeader, CardFooter, Divider } from "@chakra-ui/react"
 
 
 
@@ -59,7 +59,8 @@ export default function SingleInspiration() {
             <CardFooter>
             {activeUser() === selectedInspiration.owner.id && (
               <HStack>
-                <Link to={`/home/${id}/edit`}>Edit</Link>
+                <Link className='btn'to={`/home/${id}/edit`}
+                style={{ backgroundColor: 'rgba(163, 190, 218, 0.6)', cursor: 'pointer', color: 'white' }}>Edit</Link>
                 <Form method="POST">
                   <Button type="submit">Delete</Button>
                 </Form>
@@ -68,6 +69,9 @@ export default function SingleInspiration() {
             </CardFooter>
             
           </Card>
+
+          <div className="divider">
+          </div>
         
         {Object.entries(groupedPlaces).map(([category, categoryPlaces], index) => (
           <Box key={index}>

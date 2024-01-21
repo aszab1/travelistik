@@ -17,8 +17,8 @@ export default function Board() {
     getBoards().then(response => {
       console.log(response.data)
       setBoards(response.data)
-    });
-  }, []);
+    })
+  }, [])
   
   const userBoards = boards.filter(board => activeUser() === board.owner)
 
@@ -30,7 +30,7 @@ export default function Board() {
   
           <Row className='board-row' style={{ marginTop: '20px' }}>
             {userBoards.map((board) => {
-              const { id, image, city } = board;
+              const { id, image, city } = board
               
               return (
                 <Col as={Link} 
@@ -47,7 +47,7 @@ export default function Board() {
                     </div>
                   </div>
                 </Col>
-              );
+              )
             })}
           </Row>
           <div className="board-create" style={{ display: 'inline-block', marginLeft: '20px' }}>
@@ -56,6 +56,6 @@ export default function Board() {
           </div>
         </Container>
       </>
-    );
+    )
   }
   

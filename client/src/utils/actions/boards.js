@@ -34,37 +34,3 @@ export async function deleteBoard(id) {
   })
   return redirect('/boards')
 }
-
-
-export async function createPlace(request, id) {
-  const data = await formToObj(request)
-  console.log(data)
-  return await axios.post(`/api/boards/${id}`, data, {
-    validateStatus: () => true,
-    headers: {
-      Authorization: `Bearer ${getToken()}`
-    }
-  })
-  
-}
-
-export async function editPlace(request, id) {
-  const data = await formToObj(request)
-  console.log(data)
-  return await axios.put(`/api/boards/${id}/`, data, {
-    validateStatus: () => true,
-    headers: {
-      Authorization: `Bearer ${getToken()}`
-    }
-  })
-}
-
-export async function deletePlace(id) {
-  await axios.delete(`/api/boards/${id}/`, {
-    validateStatus: () => true,
-    headers: {
-      Authorization: `Bearer ${getToken()}`
-    }
-  })
-  return redirect(`/boards/${id}`)
-}

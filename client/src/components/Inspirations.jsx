@@ -14,9 +14,9 @@ export default function Inspirations({ inspirations }) {
   const [selectedInspirationId, setSelectedInspirationId] = useState(null)
 
   const handleReviewButtonClick = (id) => {
-    setSelectedInspirationId(id);
-    onOpen();
-  };
+    setSelectedInspirationId(id)
+    onOpen()
+  }
 
 
   

@@ -1,11 +1,21 @@
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
 import { Form, useActionData, useNavigate, useLoaderData} from "react-router-dom"
+import ImageUploadField from "./ImageUploadField"
+import { Stack, Input } from "@chakra-ui/react"
 
 export default function BoardEdit() {
   const res = useActionData()
   const navigate = useNavigate()
   const board = useLoaderData() 
 
+  const [formData, setFormData] = useState({
+    image: '',
+  })
+  console.log(formData)
+  
+  function handleChange(e) {
+    setFormData({ ...formData, [e.target.name]: e.target.value })
+  }
 
   useEffect(() => {
     if (res?.status === 200) {
@@ -14,20 +24,21 @@ export default function BoardEdit() {
   }, [res, navigate])
 
   return (
-    <>
-      <h1 className="text-center bold display-3 mb-4">Edit Board</h1>
+      <div className="create-board">
       <Form className='form' method="POST">
-        <label hidden htmlFor="city">Name</label>
-        <input type="text" name="city" placeholder='City' defaultValue={board.city} />
-        <label hidden htmlFor="country">Country</label>
-        <input type="text" name="country" placeholder='Country' defaultValue={board.country}/>
+      <Stack spacing={3}>
+      <Input variant='outlined' name="city" placeholder='City' />
+        <Input variant='outlined' name="country" placeholder='Country' />
         <label hidden htmlFor="description">Description</label>
-        <textarea name="description" placeholder='Description'defaultValue={board.description}></textarea>
+        <textarea name="description" placeholder='Description'></textarea>
+        <p>Upload an image below</p>
         <label hidden htmlFor="image">Image</label>
-        <input type="text" name="image" placeholder='Image' defaultValue={board.image}/>
+        <ImageUploadField  value={formData.image} formData={formData} setFormData={setFormData} />
+        <input className="upload" type="text" name="image" placeholder='Image' onChange={handleChange} hidden value={formData.image}  />
         {res?.data?.message && <p className='danger bold mt-4'>{res.data.message}</p>}
-        <button className="btn" type="submit">Create</button>
+        <button type="submit">Edit</button>
+        </Stack>
       </Form>
-    </>
+      </div>
   )
 }

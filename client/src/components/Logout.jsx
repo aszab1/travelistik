@@ -25,7 +25,7 @@ export default function Logout () {
 return (
   <div>
   {showMessage ? 
-  <div>You have been signed out, please login</div>
+  <div>You have been logged out.</div>
   : null}
   </div>
 )

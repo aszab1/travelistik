@@ -1,36 +1,47 @@
-import React, { useRef } from 'react';
-import { Modal, ModalOverlay, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, Textarea } from '@chakra-ui/react';
-import axios from 'axios';
-import { getToken } from '../utils/helpers/common';
+import { useRef } from 'react'
+import { Modal, ModalOverlay, ModalContent, ModalHeader, ModalBody, ModalFooter, Button, Textarea, space } from '@chakra-ui/react'
+import axios from 'axios'
+import { getToken } from '../utils/helpers/common'
 
 const ReviewForm = ({ isOpen, onClose, inspirationId }) => {
-  const reviewTextRef = useRef(null);
+  const reviewTextRef = useRef(null)
 
   const handleSubmit = async (event) => {
-    event.preventDefault();
-    const reviewText = reviewTextRef.current.value;
+    event.preventDefault()
+    const reviewText = reviewTextRef.current.value
     // Check if reviewText is empty
     if (!reviewText.trim()) {
       // Handle empty input case
-      console.error('Review text is empty');
-      return;
+      console.error('Review text is empty')
+      return
     }
 
-    // Send POST request to backend with review text and inspiration ID
+    
     try {
       await axios.post('/api/reviews/', { text: reviewText, inspiration: inspirationId }, {
         headers: { Authorization: `Bearer ${getToken()}` }
-      });
-      onClose(); // Close the modal on success
+      })
+      onClose() // Close the modal on success
     } catch (error) {
-      console.error('Error submitting review:', error);
+      console.error('Error submitting review:', error)
     }
-  };
+  }
 
   return (
-    <Modal isOpen={isOpen} onClose={onClose}>
-      <ModalOverlay />
-      <ModalContent>
+    <div className='div-modal'>
+    <Modal mt={40} classname='review-modal' isOpen={isOpen} onClose={onClose} motionPreset="slideInBottom">
+      <ModalOverlay sx={{
+        alignItems: "center",
+        justifyContent:"center",
+        display: "flex"}}/>
+      <ModalContent  sx={{
+    display: 'flex',
+    alignItems: 'center', 
+    justifyContent: 'center',
+    mx: 'auto',
+    my: 'auro',
+    background: 'white',
+  }}>
         <ModalHeader>Add a Review</ModalHeader>
         <ModalBody>
           <Textarea ref={reviewTextRef} name="reviewText" placeholder="Your review here" />
@@ -43,7 +54,8 @@ const ReviewForm = ({ isOpen, onClose, inspirationId }) => {
         </ModalFooter>
       </ModalContent>
     </Modal>
-  );
-};
+    </div>
+  )
+}
 
-export default ReviewForm;
+export default ReviewForm

@@ -1,8 +1,4 @@
 import { useLoaderData, Link, Form } from "react-router-dom"
-import { useState, useEffect } from "react"
-import BoardNavBar from "./BoardNavBar"
-import { getToken } from "../utils/helpers/common"
-import axios from "axios"
 
 
 // Bootstrap
@@ -11,61 +7,37 @@ import { Card } from "react-bootstrap"
 
 
 export default function SingleBoard() {
-  const { data } = useLoaderData();
-  const { id, places = [], categories = [] } = data
+  const selectedData = useLoaderData()
+  const selectedBoard = selectedData.data
+  
+  
+  
+  const { id, image, city, country, description, places } = selectedBoard
+  console.log(selectedBoard)
 
-  const [newPlace, setNewPlace] = useState({
-    name: '',
-    description: '',
-    category: ''
-  })
 
- 
-
-  const handleInputChange = (e) => {
-    setNewPlace({ ...newPlace, [e.target.name]: e.target.value });
-  };
-
-  const handleAddPlace = (e) => {
-    e.preventDefault()
-    const url = `/api/boards/${id}/`
-
-    axios.post(url, newPlace, {
-      headers: {
-        Authorization: `Bearer ${getToken()}`
+  const groupedPlaces = {};
+  places.forEach(place => {
+    place.categories.forEach(category => {
+      if (!groupedPlaces[category.name]) {
+        groupedPlaces[category.name] = []
       }
-
+      groupedPlaces[category.name].push(place)
     })
-    
-    console.log(newPlace);
-  };
+  })
   
 
   return (
-    <>
-      <BoardNavBar />
-      <div>
-        <h3>Your Board: {data.city}, {data.country}</h3>
-        <Form onSubmit={handleAddPlace}>
-          
-          <select name="category" value={newPlace.category} onChange={handleInputChange}>
-            {categories.map(category => (
-              <option key={category.id} value={category.id}>{category.name}</option>
-            ))}
-          </select>
-          <button type="submit">Add Place</button>
+
+          <div className="single-board">
+            <p className="card-text">{description}</p>
+        <Link className='btn' to={`/boards/${id}/edit`}
+        style={{ backgroundColor: 'rgba(163, 190, 218, 0.6)', cursor: 'pointer', color: 'white' }}>Edit</Link>
+        <Form method="POST">
+          <button>Delete</button>
         </Form>
-      </div>
+        
       
-      {places.length > 0 && places.map((place, index) => (
-        <Card key={index} className="h-100">
-          <Card.Body>
-            <Card.Title>{place.name}</Card.Title>
-            <Card.Text>{place.description}</Card.Text>
-            
-          </Card.Body>
-        </Card>
-      ))}
-    </>
+        </div>
   )
 }
