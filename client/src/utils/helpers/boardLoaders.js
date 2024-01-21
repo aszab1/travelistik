@@ -13,7 +13,7 @@ export async function getBoards() {
 
 
 export async function getSingleBoard(id) {
-  return await axios.get(`/api/boards/${id}`, {
+  return await axios.get(`/api/boards/${id}/`, {
     validateStatus: () => true,
     headers: {
       Authorization: `Bearer ${getToken()}`
