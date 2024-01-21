@@ -20,7 +20,8 @@ import BoardCreate from './components/BoardCreate'
 import Board from './components/Board'
 import SingleBoard from './components/SingleBoard'
 import BoardEdit from './components/BoardEdit'
-
+import PlaceCreate from './components/PlaceCreate'
+import PlaceEdit from './components/PlaceEdit.jsx'
 
 // Loaders
 import { registerUser, loginUser, logoutUser } from './utils/actions/auth.js'
@@ -29,7 +30,7 @@ import { registerUser, loginUser, logoutUser } from './utils/actions/auth.js'
 import { getInspirations, getSingleInspiration} from './utils/helpers/loaders.js'
 import {getBoards, getSingleBoard} from './utils/helpers/boardLoaders.js'
 import { createInspiration, editInspiration, deleteInspiration } from './utils/actions/inspiration.js'
-import { createBoard, editBoard, deleteBoard} from './utils/actions/boards.js'
+import { createBoard, editBoard, deleteBoard, createPlace, editPlace, deletePlace} from './utils/actions/boards.js'
 
 
 const router = createBrowserRouter(
@@ -98,7 +99,19 @@ const router = createBrowserRouter(
         element: <BoardEdit />,
         action: async ({ request, params }) => editBoard(request, params.id),
         loader: async ({ params }) => getSingleBoard(params.id)
-    }
+    },
+    {
+      path: '/boards/:id/view',
+      element: <PlaceCreate />,
+      action: async ({ request }) => createPlace(request)
+    },
+    {
+      path: '/boards/:id/edit',
+      element: <PlaceEdit />,
+      action: async ({ request, params }) => editPlace(request, params.id),
+      // loader: async ({ params }) => getSinglePlace(params.id)
+  },
+
 
     ]
   }]

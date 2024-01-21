@@ -1,8 +1,6 @@
 import { useLoaderData, Link, Form } from "react-router-dom"
 import { activeUser } from "../utils/helpers/common"
-
-// Bootstrap
-import { Card, Container } from "react-bootstrap"
+import { Box, Image, Text, Button, VStack, HStack, Card, CardBody, CardHeader, CardFooter } from "@chakra-ui/react"
 
 
 
@@ -15,7 +13,7 @@ export default function SingleInspiration() {
   const displayOwner = owner !== 'admin'
   
   
-  const { id, image, city, country, description, places, likes, reviews,} = selectedInspiration
+  const { id, image, city, country, description, places} = selectedInspiration
   console.log(selectedInspiration)
 
  
@@ -26,62 +24,67 @@ export default function SingleInspiration() {
   const groupedPlaces = {};
   places.forEach(place => {
     place.categories.forEach(category => {
-      if (!groupedPlaces[category.name]) {
-        groupedPlaces[category.name] = []
+      const categoryName = mapCategoryName(category.name);
+      if (!groupedPlaces[categoryName]) {
+        groupedPlaces[categoryName] = [];
       }
-      groupedPlaces[category.name].push(place)
-    })
-  })
+      groupedPlaces[categoryName].push(place);
+    });
+  });
+
+  function mapCategoryName(name) {
+    const nameMapping = {
+      'restaurant': 'Restaurants',
+      'bar': 'Bars',
+      'landmark': 'Landmarks'
+    };
+    return nameMapping[name]
+  }
   
   
   
 
   return (
     <>
-    <div className="single-card">
-      <img src={image} className="card-img-top" alt={city}></img>
-      <div className="card-body">
-        <h5 className="card-title">{city}, {country}</h5>
-        {displayOwner && (
-        <p>Created by user {owner}</p>
-        )}
-        {activeUser() === selectedInspiration.owner.id &&
-          
-          <>
-        <Link to={`/home/${id}/edit`}>Edit</Link>
-        <Form method="POST">
-          <button>Delete</button>
-        </Form>
+      <VStack spacing={4} align="stretch">
+      <Card  maxW='md' borderWidth="1px" borderRadius="lg" overflow="hidden" className="single-card">
+        <CardHeader className='single-image'>
+          <Image boxSize="500px" objectFit="cover" src={image} alt={`${city}`} />
+          </ CardHeader>
+          <CardBody className="single-body">
+            <Text className='single-header' fontSize="xl">{city}, {country}</Text>
+            {displayOwner && <Text>Created by user {owner}</Text>}
+            <Text mt={4}>{description}</Text>
+            </CardBody>
+            <CardFooter>
+            {activeUser() === selectedInspiration.owner.id && (
+              <HStack>
+                <Link to={`/home/${id}/edit`}>Edit</Link>
+                <Form method="POST">
+                  <Button type="submit">Delete</Button>
+                </Form>
+              </HStack>
+            )}
+            </CardFooter>
+            
+          </Card>
         
-        </>
-      }
-      
-      </div>
-      
-        <p className="card-text">{description}</p>
-      </div>
-      {Object.entries(groupedPlaces).map(([category, categoryPlaces], index) => (
-          <div key={index}>
-            <h3>{category}</h3>
-            <div className="row row-cols-1 row-cols-md-3 g-4">
+        {Object.entries(groupedPlaces).map(([category, categoryPlaces], index) => (
+          <Box key={index}>
+            <Text className='category' fontSize="lg" fontWeight="bold">{category}</Text>
+            <HStack className='places-stack' spacing={4}>
               {categoryPlaces.map((place, placeIndex) => (
-                <div className="col" key={placeIndex}>
-                  <Card className="h-100">
-                    <Card.Body>
-                      <Card.Title>{place.name}</Card.Title>
-                      <Card.Text>{place.description}</Card.Text>
-                    </Card.Body>
-                    <Card.Footer>
-                      <small className="text-muted">Leave a Review</small>
-                    </Card.Footer>
-                  </Card>
-                </div>
+                <Box borderWidth="10px" borderRadius="lg" overflow="hidden" key={placeIndex}>
+                  <Box className='single-box' p={5}>
+                    <Text fontSize="md" fontWeight="bold" className="font-tag">{place.name}</Text>
+                    <Text>{place.description}</Text>
+                  </Box>
+                </Box>
               ))}
-            </div>
-          </div>
+            </HStack>
+          </Box>
         ))}
-        
-
+      </VStack>
     </>
   )
 }

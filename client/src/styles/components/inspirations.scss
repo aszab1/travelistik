@@ -1,47 +1,34 @@
-
-.inspo-column {
-  margin: 1em;
-  &:hover {
-    background-size: 120%;
-  }
-}
-
 .inspo-div {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  margin-bottom: 40px;
-  width: 300px;
-  height: 300px;
-  border-radius: 5px; 
+  margin: 50px;
 }
 
-.inspiration {
-  box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.4), 0 6px 10px 0 rgba(0, 0, 0, 0.3);
+.inspo-card {
+border-radius: 3px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0,19)
 }
-
-.inspo {
-  padding-right: 0; 
-  
-  background: #8e1f1f; 
-  padding: 20px; 
-}
-
-
-.sidebar-container {
-  background-color: #a29e9e; 
-  margin-top: 20px; 
-  padding: 20px; 
-}
-
-
-.sidebar-message {
-  p {
-    font-size: 16px;
-    margin-bottom: 15px;
+  .inspo-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
   }
 
-  .btn-primary {
+h3 {
+  padding: 20px;
+  margin: 50px 0;
+}
+
+.sidebar {
+  background-color: #f4f4f4;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+.sidebar-text {
+  padding: 20px;
+  margin-top: 150px;
+} 
+
+  .btn-share {
+    margin: 20px;
     background-color: #007bff;
     color: #fff;
     text-decoration: none;

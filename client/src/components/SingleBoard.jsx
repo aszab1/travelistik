@@ -1,5 +1,8 @@
 import { useLoaderData, Link, Form } from "react-router-dom"
+import { useState, useEffect } from "react"
 import BoardNavBar from "./BoardNavBar"
+import { getToken } from "../utils/helpers/common"
+import axios from "axios"
 
 
 // Bootstrap
@@ -8,68 +11,61 @@ import { Card } from "react-bootstrap"
 
 
 export default function SingleBoard() {
-  const selectedData = useLoaderData()
-  const selectedBoard = selectedData.data
-  
-  
-  
-  const { id, image, city, country, description, places } = selectedBoard
-  console.log(selectedBoard)
+  const { data } = useLoaderData();
+  const { id, places = [], categories = [] } = data
 
-
-  const groupedPlaces = {};
-  places.forEach(place => {
-    place.categories.forEach(category => {
-      if (!groupedPlaces[category.name]) {
-        groupedPlaces[category.name] = []
-      }
-      groupedPlaces[category.name].push(place)
-    })
+  const [newPlace, setNewPlace] = useState({
+    name: '',
+    description: '',
+    category: ''
   })
+
+ 
+
+  const handleInputChange = (e) => {
+    setNewPlace({ ...newPlace, [e.target.name]: e.target.value });
+  };
+
+  const handleAddPlace = (e) => {
+    e.preventDefault()
+    const url = `/api/boards/${id}/`
+
+    axios.post(url, newPlace, {
+      headers: {
+        Authorization: `Bearer ${getToken()}`
+      }
+
+    })
+    
+    console.log(newPlace);
+  };
   
 
   return (
     <>
-    <BoardNavBar>
-    {/* <div className="card">
-      <img src={image} className="card-img-top" alt={city}></img>
-      <div className="card-body">
-        <h5 className="card-title">{city}, {country}</h5> */}
-
-        
+      <BoardNavBar />
+      <div>
+        <h3>Your Board: {data.city}, {data.country}</h3>
+        <Form onSubmit={handleAddPlace}>
           
-          <>
-        <Link to={`/boards/${id}/edit`}>Edit</Link>
-        <Form method="POST">
-          <button>Delete</button>
+          <select name="category" value={newPlace.category} onChange={handleInputChange}>
+            {categories.map(category => (
+              <option key={category.id} value={category.id}>{category.name}</option>
+            ))}
+          </select>
+          <button type="submit">Add Place</button>
         </Form>
-        
-        </>
+      </div>
       
-      
-        {/* <p className="card-text">{description}</p> */}
-      {Object.entries(groupedPlaces).map(([category, categoryPlaces], index) => (
-          <div key={index}>
-            <h3>{category}</h3>
-            <div className="row row-cols-1 row-cols-md-3 g-4">
-              {categoryPlaces.map((place, placeIndex) => (
-                <div className="col" key={placeIndex}>
-                  <Card className="h-100">
-                    <Card.Body>
-                      <Card.Title>{place.name}</Card.Title>
-                      <Card.Text>{place.description}</Card.Text>
-                    </Card.Body>
-                    <Card.Footer>
-                      <small className="text-muted">Leave a Review</small>
-                    </Card.Footer>
-                  </Card>
-                </div>
-              ))}
-            </div>
-          </div>
-        ))}
-        
-        </BoardNavBar>
+      {places.length > 0 && places.map((place, index) => (
+        <Card key={index} className="h-100">
+          <Card.Body>
+            <Card.Title>{place.name}</Card.Title>
+            <Card.Text>{place.description}</Card.Text>
+            
+          </Card.Body>
+        </Card>
+      ))}
     </>
   )
 }

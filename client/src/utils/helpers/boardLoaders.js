@@ -2,10 +2,6 @@ import axios from "axios"
 import { getToken } from "./common"
 
 
-// export async function getBoards() {
-//   const boardList = await axios.get('/api/boards/')
-//   return boardList
-// }
 export async function getBoards() {
   return await axios.get('/api/boards/', {
     validateStatus: () => true,
