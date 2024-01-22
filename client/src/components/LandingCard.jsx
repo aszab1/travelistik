@@ -1,13 +1,24 @@
 import { useState, useEffect } from 'react'
 import { Box, Heading, Text, Image, Card, Stack, CardBody } from '@chakra-ui/react'
 
-// Local images
+
 import machuPicchu from '../assets/images/MachuPicchu.jpg'
 import petra from '../assets/images/Petra.jpg'
 import babylon from '../assets/images/HangingGardensOfBabylon.jpg'
 import pyramid from '../assets/images/pyramid.jpg'
 import rio from '../assets/images/Rio.jpg'
 import colosseum from '../assets/images/RomanColosseum.jpg'
+import { url } from 'inspector'
+// const machuPicchu = 'https://i.imgur.com/gpd8FoR.jpg'
+// const petra = 'https://i.imgur.com/ALmd3Sg.jpg'
+// const babylon = 'https://i.imgur.com/VfDDT9El.jpg'
+// const pyramid = 'https://i.imgur.com/lp7t3rel.jpg'
+// const rio = 'https://i.imgur.com/Yl1RF6Nl.jpg'
+// const colosseum = 'https://i.imgur.com/gtwY8Hel.jpg'
+
+
+
+
 
 export default function LandingCard() {
   const images = [machuPicchu, petra, pyramid, rio, colosseum, babylon]
